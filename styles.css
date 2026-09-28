@@ -230,6 +230,34 @@ input[type=search], input[type=text], select {
 }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 
+/* ---------- Building levels ---------- */
+.lvl-group { border-top: 1px solid var(--border); }
+.lvl-group > summary {
+  display: flex; justify-content: space-between; align-items: center; gap: 8px;
+  min-height: 48px; cursor: pointer; font-weight: 700; list-style: none;
+}
+.lvl-group > summary::-webkit-details-marker { display: none; }
+.lvl-group > summary::after { content: "▸"; color: var(--muted); margin-left: 8px; transition: transform .15s; }
+.lvl-group[open] > summary::after { transform: rotate(90deg); }
+.lvl-group > summary > span:first-child { flex: 1; }
+.lvl-group[open] { padding-bottom: 10px; }
+.lvl-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding: 6px 0; min-height: 52px;
+}
+.lvl-row + .lvl-row { border-top: 1px dashed var(--border); }
+.lvl-row .name { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.lvl-row.all .name { font-weight: 700; color: var(--accent); }
+.lvl-step { display: flex; align-items: center; gap: 6px; flex: none; }
+.lvl-step .btn { min-width: 44px; padding: 0; font-size: 20px; }
+.lvl-val {
+  min-width: 64px; height: 44px; border-radius: 10px; border: 1px solid var(--border);
+  background: transparent; font-weight: 800; font-size: 17px; cursor: pointer;
+  font-variant-numeric: tabular-nums;
+}
+.lvl-val .muted { font-weight: 600; font-size: 12px; }
+.lvl-sub { margin: 12px 0 2px; font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+
 /* ---------- Dialog ---------- */
 .dialog-wrap {
   position: fixed; inset: 0; z-index: 30;

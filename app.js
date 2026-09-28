@@ -15,6 +15,7 @@ const ui = {
   prevTab: 'next',
   spareLimit: 8,
   showBlocked: false,
+  openGroups: new Set(),
   filters: { stage: 'all', cat: 'all', q: '', hideDone: false },
 };
 
@@ -123,6 +124,100 @@ function suggestions() {
     now: ready.filter(it => it.beforeTH <= nextTH),
     spare: ready.filter(it => it.beforeTH > nextTH),
   };
+}
+
+/* ---------------- Building levels ---------------- */
+
+const LEVEL_GROUPS = [
+  ['Town Hall', 'Town Hall'], ['Hero Hall', 'Hero Hall'], ['Eagle Artillery', 'Eagle Artillery'],
+  ['Inferno Artillery', 'Inferno Artillery'], ['Cannon', 'Cannons'], ['Archer Tower', 'Archer Towers'],
+  ['Gold Storage', 'Gold Storages'], ['Elixir Storage', 'Elixir Storages'],
+];
+const BUILDINGS = new Map();   // "Cannon #3" -> { key, group, min, max, ids: {level: id} }
+
+function buildLevelIndex() {
+  for (const it of DATA) {
+    const m = it.name.match(/^(.*) -> (\d+)$/);
+    if (!m) continue;
+    const key = m[1], lvl = +m[2];
+    if (!BUILDINGS.has(key)) BUILDINGS.set(key, { key, group: key.replace(/ #\d+$/, ''), min: Infinity, max: 0, ids: {} });
+    const b = BUILDINGS.get(key);
+    b.ids[lvl] = it.id;
+    b.min = Math.min(b.min, lvl - 1);
+    b.max = Math.max(b.max, lvl);
+  }
+}
+
+function levelOf(b) {
+  let lvl = b.min;
+  while (b.ids[lvl + 1] && state.done[b.ids[lvl + 1]]) lvl++;
+  return lvl;
+}
+
+// Ticks every upgrade up to `lvl` and clears the ones above it. No cascade:
+// a building's level says nothing about the rest of the base.
+function setLevel(b, lvl) {
+  lvl = Math.min(b.max, Math.max(b.min, lvl));
+  for (const [n, id] of Object.entries(b.ids)) {
+    if (+n <= lvl) { state.done[id] = true; delete state.running[id]; }
+    else delete state.done[id];
+  }
+}
+
+function groupBuildings(group) {
+  return [...BUILDINGS.values()].filter(b => b.group === group)
+    .sort((a, b) => a.key.localeCompare(b.key, undefined, { numeric: true }));
+}
+
+function stepperHTML(action, attrs, value, max, label) {
+  return `<div class="lvl-step">
+      <button class="btn ghost" data-action="${action}" ${attrs} data-delta="-1" aria-label="Lower ${esc(label)}">−</button>
+      <button class="lvl-val" data-action="${action}-type" ${attrs} aria-label="Type ${esc(label)} level">${value}<span class="muted">/${max}</span></button>
+      <button class="btn ghost" data-action="${action}" ${attrs} data-delta="1" aria-label="Raise ${esc(label)}">+</button>
+    </div>`;
+}
+
+function levelsHTML() {
+  let html = '';
+  for (const [group, label] of LEVEL_GROUPS) {
+    const list = groupBuildings(group);
+    if (!list.length) continue;
+    const levels = list.map(levelOf);
+    const lo = Math.min(...levels), hi = Math.max(...levels);
+    const summary = lo === hi ? `Lv ${lo}` : `Lv ${lo}–${hi}`;
+    html += `<details class="lvl-group" data-group="${esc(group)}" ${ui.openGroups.has(group) ? 'open' : ''}>
+      <summary><span>${esc(label)}</span><span class="muted">${summary}</span></summary>`;
+    if (group === 'Town Hall') {
+      html += `<p class="muted small">Only changes the Town Hall. Use “Set my starting point” to tick everything below it too.</p>`;
+    }
+    if (list.length > 1) {
+      html += `<div class="lvl-row all"><span class="name">All ${esc(label.toLowerCase())}</span>
+        ${stepperHTML('lvl-all', `data-group="${esc(group)}"`, lo, list[0].max, 'all ' + label.toLowerCase())}</div>`;
+    }
+    for (const b of list) {
+      html += `<div class="lvl-row"><span class="name">${esc(b.key)}</span>
+        ${stepperHTML('lvl', `data-key="${esc(b.key)}"`, levelOf(b), b.max, b.key)}</div>`;
+    }
+    html += '</details>';
+  }
+
+  // One-off builds, merges and Gear Ups: a done / not done switch.
+  const builds = DATA.filter(it => !/ -> \d+$/.test(it.name));
+  const doneCount = builds.filter(isDone).length;
+  html += `<details class="lvl-group" data-group="built" ${ui.openGroups.has('built') ? 'open' : ''}>
+    <summary><span>New buildings &amp; merges</span><span class="muted">${doneCount}/${builds.length} built</span></summary>
+    <p class="muted small">Tick anything already on your base. Ticking a merge also ticks the two level-21 buildings it uses.</p>`;
+  for (let t = START_TH + 1; t <= MAX_TH; t++) {
+    const rows = builds.filter(it => it.beforeTH === t);
+    if (!rows.length) continue;
+    html += `<div class="lvl-sub">Before TH${t}</div>`;
+    html += rows.map(it => `<div class="lvl-row">
+        <span class="name">${esc(it.name)}</span>
+        <button class="check ${isDone(it) ? 'on' : ''}" data-action="toggle-done" data-id="${it.id}" aria-label="${esc(it.name)} built" aria-pressed="${isDone(it)}">${isDone(it) ? CHECK_SVG : ''}</button>
+      </div>`).join('');
+  }
+  html += '</details>';
+  return html;
 }
 
 function computeTails() {
@@ -510,6 +605,11 @@ function renderSettings() {
       </div>
     </div>
   </div>
+  <h2>Building levels</h2>
+  <div class="card">
+    <p class="muted small" style="margin:0 0 8px">Match your base. Setting a level ticks off every upgrade up to it and un-ticks the ones above. Tap a level to type it.</p>
+    ${levelsHTML()}
+  </div>
   <h2>Backup</h2>
   <div class="card">
     <div class="muted small" style="margin-bottom:10px">Progress is saved on this device only. Copy a backup and paste it on another device to move it.</div>
@@ -529,6 +629,9 @@ function renderSettings() {
   </div>
   <button class="btn ghost block" style="margin-top:16px" data-action="close-settings">Done</button>`;
   el.querySelector('#importFile').addEventListener('change', importState);
+  el.querySelectorAll('details[data-group]').forEach(d => d.addEventListener('toggle', () => {
+    if (d.open) ui.openGroups.add(d.dataset.group); else ui.openGroups.delete(d.dataset.group);
+  }));
 }
 
 /* ---------------- Shell ---------------- */
@@ -729,6 +832,35 @@ async function onClick(e) {
       state = defaultState();
       break;
     case 'close-settings': ui.tab = ui.prevTab; break;
+    case 'lvl': {
+      const b = BUILDINGS.get(btn.dataset.key);
+      setLevel(b, levelOf(b) + +btn.dataset.delta);
+      break;
+    }
+    case 'lvl-all': {
+      const list = groupBuildings(btn.dataset.group);
+      const target = Math.min(...list.map(levelOf)) + +btn.dataset.delta;
+      // + lifts the lowest ones up; − brings every building down to the new level.
+      list.forEach(b => setLevel(b, btn.dataset.delta > 0 ? Math.max(levelOf(b), target) : target));
+      break;
+    }
+    case 'lvl-type':
+    case 'lvl-all-type': {
+      const all = btn.dataset.action === 'lvl-all-type';
+      const list = all ? groupBuildings(btn.dataset.group) : [BUILDINGS.get(btn.dataset.key)];
+      const { min, max } = list[0];
+      const input = await ask({
+        title: all ? `Set all ${btn.dataset.group.toLowerCase()}s` : btn.dataset.key,
+        body: `Level ${min}–${max}`,
+        input: { value: String(Math.min(...list.map(levelOf))) },
+        okText: 'Set level',
+      });
+      if (input == null) return;
+      const n = parseInt(input, 10);
+      if (!Number.isFinite(n) || n < min || n > max) { toast(`Enter a level from ${min} to ${max}`); return; }
+      list.forEach(b => setLevel(b, n));
+      break;
+    }
     default: return;
   }
   commit();
@@ -747,6 +879,7 @@ async function init() {
   // Drop timers/marks for ids that no longer exist after a data update.
   pruneUnknownIds(state);
   computeTails();
+  buildLevelIndex();
 
   document.getElementById('main').addEventListener('click', onClick);
   document.getElementById('tabbar').addEventListener('click', e => {
