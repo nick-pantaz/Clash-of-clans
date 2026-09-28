@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Rush Tracker</title>
+  <meta name="description" content="Track your Clash of Clans TH10 to TH18 rush: what to upgrade next and what to give spare builders.">
+  <meta name="theme-color" content="#14171f">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Rush Tracker">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="th-badge" id="thBadge">TH10</div>
+    <div class="topbar-text">
+      <div class="topbar-title">Rush Tracker</div>
+      <div class="topbar-sub" id="topSub">Loading…</div>
+    </div>
+    <button class="icon-btn" id="settingsBtn" aria-label="Settings">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M19.4 13a7.5 7.5 0 0 0 0-2l2.1-1.6-2-3.5-2.5 1a7.6 7.6 0 0 0-1.7-1L15 3.3h-4l-.4 2.6a7.6 7.6 0 0 0-1.7 1l-2.5-1-2 3.5L6.6 11a7.5 7.5 0 0 0 0 2l-2.1 1.6 2 3.5 2.5-1c.5.4 1.1.7 1.7 1l.4 2.6h4l.4-2.6c.6-.3 1.2-.6 1.7-1l2.5 1 2-3.5L19.4 13ZM13 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" transform="translate(-1 0)"/></svg>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="view" id="view-next" data-view="next"></section>
+    <section class="view" id="view-builders" data-view="builders" hidden></section>
+    <section class="view" id="view-progress" data-view="progress" hidden></section>
+    <section class="view" id="view-all" data-view="all" hidden></section>
+    <section class="view" id="view-settings" data-view="settings" hidden></section>
+  </main>
+
+  <nav class="tabbar" id="tabbar">
+    <button data-tab="next" class="active">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 3 7v2h18V7l-9-5ZM5 11v7H3v3h18v-3h-2v-7h-3v7h-2.5v-7h-3v7H8v-7H5Z"/></svg>
+      <span>Next</span>
+    </button>
+    <button data-tab="builders">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.7 6.3a4 4 0 0 1-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 1 5.4-5.4l-2.4 2.4-2.1-.6-.6-2.1 2.4-2.4-.3-.3ZM21 3l-4 1-1 2 2 2 2-1 1-4Z"/></svg>
+      <span>Builders</span><i class="dot" id="readyDot" hidden></i>
+    </button>
+    <button data-tab="progress">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20h16v2H2V2h2v18Zm3-2V11h3v7H7Zm5 0V6h3v12h-3Zm5 0v-4h3v4h-3Z"/></svg>
+      <span>Progress</span>
+    </button>
+    <button data-tab="all">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h2v2H3V5Zm4 0h14v2H7V5Zm-4 6h2v2H3v-2Zm4 0h14v2H7v-2Zm-4 6h2v2H3v-2Zm4 0h14v2H7v-2Z"/></svg>
+      <span>All</span>
+    </button>
+  </nav>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

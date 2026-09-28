@@ -1,0 +1,7220 @@
+[
+ {
+  "id": 1,
+  "beforeTH": 11,
+  "availTH": 8,
+  "category": "Hero Hall",
+  "name": "Hero Hall -> 2",
+  "resource": "Elixir",
+  "cost": 1600000,
+  "days": 2,
+  "include": true,
+  "notes": "Listed requirement.",
+  "requires": []
+ },
+ {
+  "id": 2,
+  "beforeTH": 11,
+  "availTH": 10,
+  "category": "Place new building",
+  "name": "Bomb Tower (new)",
+  "resource": "Gold",
+  "cost": 700000,
+  "days": 0.5,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 3,
+  "beforeTH": 11,
+  "availTH": 10,
+  "category": "Place new building",
+  "name": "X-Bow (new)",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.5,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 4,
+  "beforeTH": 11,
+  "availTH": 10,
+  "category": "Place new building",
+  "name": "TH10 traps (Air Bomb, SAM, Giant Bomb, Skeleton)",
+  "resource": "Gold",
+  "cost": 34500,
+  "days": 0,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 5,
+  "beforeTH": 11,
+  "availTH": 10,
+  "category": "Place new building",
+  "name": "Inferno Tower (new) #1",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.5,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 6,
+  "beforeTH": 11,
+  "availTH": 10,
+  "category": "Place new building",
+  "name": "Inferno Tower (new) #2",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.5,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 7,
+  "beforeTH": 11,
+  "availTH": 10,
+  "category": "Place new building",
+  "name": "Cannon (new)",
+  "resource": "Gold",
+  "cost": 250,
+  "days": 0.0417,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 8,
+  "beforeTH": 11,
+  "availTH": 10,
+  "category": "Place new building",
+  "name": "Archer Tower (new)",
+  "resource": "Gold",
+  "cost": 1000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 9,
+  "beforeTH": 11,
+  "availTH": 2,
+  "category": "Storage",
+  "name": "Gold Storage #1 -> 2",
+  "resource": "Elixir",
+  "cost": 750,
+  "days": 0.0014,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": []
+ },
+ {
+  "id": 10,
+  "beforeTH": 11,
+  "availTH": 2,
+  "category": "Storage",
+  "name": "Gold Storage #2 -> 2",
+  "resource": "Elixir",
+  "cost": 750,
+  "days": 0.0014,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": []
+ },
+ {
+  "id": 11,
+  "beforeTH": 11,
+  "availTH": 2,
+  "category": "Storage",
+  "name": "Gold Storage #1 -> 3",
+  "resource": "Elixir",
+  "cost": 1500,
+  "days": 0.0035,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   9
+  ]
+ },
+ {
+  "id": 12,
+  "beforeTH": 11,
+  "availTH": 2,
+  "category": "Storage",
+  "name": "Gold Storage #2 -> 3",
+  "resource": "Elixir",
+  "cost": 1500,
+  "days": 0.0035,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   10
+  ]
+ },
+ {
+  "id": 13,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Gold Storage #1 -> 4",
+  "resource": "Elixir",
+  "cost": 3000,
+  "days": 0.0104,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   11
+  ]
+ },
+ {
+  "id": 14,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Gold Storage #2 -> 4",
+  "resource": "Elixir",
+  "cost": 3000,
+  "days": 0.0104,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   12
+  ]
+ },
+ {
+  "id": 15,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Gold Storage #1 -> 5",
+  "resource": "Elixir",
+  "cost": 6000,
+  "days": 0.0208,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   13
+  ]
+ },
+ {
+  "id": 16,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Gold Storage #2 -> 5",
+  "resource": "Elixir",
+  "cost": 6000,
+  "days": 0.0208,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   14
+  ]
+ },
+ {
+  "id": 17,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Gold Storage #1 -> 6",
+  "resource": "Elixir",
+  "cost": 12000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   15
+  ]
+ },
+ {
+  "id": 18,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Gold Storage #2 -> 6",
+  "resource": "Elixir",
+  "cost": 12000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   16
+  ]
+ },
+ {
+  "id": 19,
+  "beforeTH": 11,
+  "availTH": 4,
+  "category": "Storage",
+  "name": "Gold Storage #1 -> 7",
+  "resource": "Elixir",
+  "cost": 25000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   17
+  ]
+ },
+ {
+  "id": 20,
+  "beforeTH": 11,
+  "availTH": 4,
+  "category": "Storage",
+  "name": "Gold Storage #2 -> 7",
+  "resource": "Elixir",
+  "cost": 25000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   18
+  ]
+ },
+ {
+  "id": 21,
+  "beforeTH": 11,
+  "availTH": 4,
+  "category": "Storage",
+  "name": "Gold Storage #2 -> 8",
+  "resource": "Elixir",
+  "cost": 50000,
+  "days": 0.125,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   20
+  ]
+ },
+ {
+  "id": 22,
+  "beforeTH": 11,
+  "availTH": 2,
+  "category": "Storage",
+  "name": "Gold Storage #3 -> 2",
+  "resource": "Elixir",
+  "cost": 750,
+  "days": 0.0014,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": []
+ },
+ {
+  "id": 23,
+  "beforeTH": 11,
+  "availTH": 2,
+  "category": "Storage",
+  "name": "Gold Storage #3 -> 3",
+  "resource": "Elixir",
+  "cost": 1500,
+  "days": 0.0035,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   22
+  ]
+ },
+ {
+  "id": 24,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Gold Storage #3 -> 4",
+  "resource": "Elixir",
+  "cost": 3000,
+  "days": 0.0104,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   23
+  ]
+ },
+ {
+  "id": 25,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Gold Storage #3 -> 5",
+  "resource": "Elixir",
+  "cost": 6000,
+  "days": 0.0208,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   24
+  ]
+ },
+ {
+  "id": 26,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Gold Storage #3 -> 6",
+  "resource": "Elixir",
+  "cost": 12000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   25
+  ]
+ },
+ {
+  "id": 27,
+  "beforeTH": 11,
+  "availTH": 4,
+  "category": "Storage",
+  "name": "Gold Storage #3 -> 7",
+  "resource": "Elixir",
+  "cost": 25000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   26
+  ]
+ },
+ {
+  "id": 28,
+  "beforeTH": 11,
+  "availTH": 2,
+  "category": "Storage",
+  "name": "Gold Storage #4 -> 2",
+  "resource": "Elixir",
+  "cost": 750,
+  "days": 0.0014,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": []
+ },
+ {
+  "id": 29,
+  "beforeTH": 11,
+  "availTH": 2,
+  "category": "Storage",
+  "name": "Gold Storage #4 -> 3",
+  "resource": "Elixir",
+  "cost": 1500,
+  "days": 0.0035,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   28
+  ]
+ },
+ {
+  "id": 30,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Gold Storage #4 -> 4",
+  "resource": "Elixir",
+  "cost": 3000,
+  "days": 0.0104,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   29
+  ]
+ },
+ {
+  "id": 31,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Gold Storage #4 -> 5",
+  "resource": "Elixir",
+  "cost": 6000,
+  "days": 0.0208,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   30
+  ]
+ },
+ {
+  "id": 32,
+  "beforeTH": 11,
+  "availTH": 4,
+  "category": "Storage",
+  "name": "Gold Storage #3 -> 8",
+  "resource": "Elixir",
+  "cost": 50000,
+  "days": 0.125,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   27
+  ]
+ },
+ {
+  "id": 33,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Gold Storage #4 -> 6",
+  "resource": "Elixir",
+  "cost": 12000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   31
+  ]
+ },
+ {
+  "id": 34,
+  "beforeTH": 11,
+  "availTH": 4,
+  "category": "Storage",
+  "name": "Gold Storage #4 -> 7",
+  "resource": "Elixir",
+  "cost": 25000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   33
+  ]
+ },
+ {
+  "id": 35,
+  "beforeTH": 11,
+  "availTH": 5,
+  "category": "Storage",
+  "name": "Gold Storage #3 -> 9",
+  "resource": "Elixir",
+  "cost": 100000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   32
+  ]
+ },
+ {
+  "id": 36,
+  "beforeTH": 11,
+  "availTH": 4,
+  "category": "Storage",
+  "name": "Gold Storage #4 -> 8",
+  "resource": "Elixir",
+  "cost": 50000,
+  "days": 0.125,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   34
+  ]
+ },
+ {
+  "id": 37,
+  "beforeTH": 11,
+  "availTH": 5,
+  "category": "Storage",
+  "name": "Gold Storage #4 -> 9",
+  "resource": "Elixir",
+  "cost": 100000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   36
+  ]
+ },
+ {
+  "id": 38,
+  "beforeTH": 11,
+  "availTH": 2,
+  "category": "Storage",
+  "name": "Elixir Storage #1 -> 2",
+  "resource": "Gold",
+  "cost": 750,
+  "days": 0.0014,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": []
+ },
+ {
+  "id": 39,
+  "beforeTH": 11,
+  "availTH": 2,
+  "category": "Storage",
+  "name": "Elixir Storage #1 -> 3",
+  "resource": "Gold",
+  "cost": 1500,
+  "days": 0.0035,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   38
+  ]
+ },
+ {
+  "id": 40,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Elixir Storage #1 -> 4",
+  "resource": "Gold",
+  "cost": 3000,
+  "days": 0.0104,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   39
+  ]
+ },
+ {
+  "id": 41,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Elixir Storage #1 -> 5",
+  "resource": "Gold",
+  "cost": 6000,
+  "days": 0.0208,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   40
+  ]
+ },
+ {
+  "id": 42,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Elixir Storage #1 -> 6",
+  "resource": "Gold",
+  "cost": 12000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   41
+  ]
+ },
+ {
+  "id": 43,
+  "beforeTH": 11,
+  "availTH": 4,
+  "category": "Storage",
+  "name": "Elixir Storage #1 -> 7",
+  "resource": "Gold",
+  "cost": 25000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   42
+  ]
+ },
+ {
+  "id": 44,
+  "beforeTH": 11,
+  "availTH": 6,
+  "category": "Storage",
+  "name": "Gold Storage #4 -> 10",
+  "resource": "Elixir",
+  "cost": 250000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   37
+  ]
+ },
+ {
+  "id": 45,
+  "beforeTH": 11,
+  "availTH": 2,
+  "category": "Storage",
+  "name": "Elixir Storage #2 -> 2",
+  "resource": "Gold",
+  "cost": 750,
+  "days": 0.0014,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": []
+ },
+ {
+  "id": 46,
+  "beforeTH": 11,
+  "availTH": 2,
+  "category": "Storage",
+  "name": "Elixir Storage #2 -> 3",
+  "resource": "Gold",
+  "cost": 1500,
+  "days": 0.0035,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   45
+  ]
+ },
+ {
+  "id": 47,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Elixir Storage #2 -> 4",
+  "resource": "Gold",
+  "cost": 3000,
+  "days": 0.0104,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   46
+  ]
+ },
+ {
+  "id": 48,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Elixir Storage #2 -> 5",
+  "resource": "Gold",
+  "cost": 6000,
+  "days": 0.0208,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   47
+  ]
+ },
+ {
+  "id": 49,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Elixir Storage #2 -> 6",
+  "resource": "Gold",
+  "cost": 12000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   48
+  ]
+ },
+ {
+  "id": 50,
+  "beforeTH": 11,
+  "availTH": 4,
+  "category": "Storage",
+  "name": "Elixir Storage #2 -> 7",
+  "resource": "Gold",
+  "cost": 25000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   49
+  ]
+ },
+ {
+  "id": 51,
+  "beforeTH": 11,
+  "availTH": 4,
+  "category": "Storage",
+  "name": "Elixir Storage #2 -> 8",
+  "resource": "Gold",
+  "cost": 50000,
+  "days": 0.125,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   50
+  ]
+ },
+ {
+  "id": 52,
+  "beforeTH": 11,
+  "availTH": 7,
+  "category": "Storage",
+  "name": "Gold Storage #4 -> 11",
+  "resource": "Elixir",
+  "cost": 500000,
+  "days": 0.25,
+  "include": true,
+  "notes": "Needed to hold 4,000,000 at TH10",
+  "requires": [
+   44
+  ]
+ },
+ {
+  "id": 53,
+  "beforeTH": 11,
+  "availTH": 9,
+  "category": "Hero Hall",
+  "name": "Hero Hall -> 3",
+  "resource": "Elixir",
+  "cost": 2300000,
+  "days": 3,
+  "include": true,
+  "notes": "Listed requirement.",
+  "requires": [
+   1
+  ]
+ },
+ {
+  "id": 54,
+  "beforeTH": 11,
+  "availTH": 2,
+  "category": "Storage",
+  "name": "Elixir Storage #3 -> 2",
+  "resource": "Gold",
+  "cost": 750,
+  "days": 0.0014,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": []
+ },
+ {
+  "id": 55,
+  "beforeTH": 11,
+  "availTH": 2,
+  "category": "Storage",
+  "name": "Elixir Storage #3 -> 3",
+  "resource": "Gold",
+  "cost": 1500,
+  "days": 0.0035,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   54
+  ]
+ },
+ {
+  "id": 56,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Elixir Storage #3 -> 4",
+  "resource": "Gold",
+  "cost": 3000,
+  "days": 0.0104,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   55
+  ]
+ },
+ {
+  "id": 57,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Elixir Storage #3 -> 5",
+  "resource": "Gold",
+  "cost": 6000,
+  "days": 0.0208,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   56
+  ]
+ },
+ {
+  "id": 58,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Elixir Storage #3 -> 6",
+  "resource": "Gold",
+  "cost": 12000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   57
+  ]
+ },
+ {
+  "id": 59,
+  "beforeTH": 11,
+  "availTH": 4,
+  "category": "Storage",
+  "name": "Elixir Storage #3 -> 7",
+  "resource": "Gold",
+  "cost": 25000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   58
+  ]
+ },
+ {
+  "id": 60,
+  "beforeTH": 11,
+  "availTH": 2,
+  "category": "Storage",
+  "name": "Elixir Storage #4 -> 2",
+  "resource": "Gold",
+  "cost": 750,
+  "days": 0.0014,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": []
+ },
+ {
+  "id": 61,
+  "beforeTH": 11,
+  "availTH": 2,
+  "category": "Storage",
+  "name": "Elixir Storage #4 -> 3",
+  "resource": "Gold",
+  "cost": 1500,
+  "days": 0.0035,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   60
+  ]
+ },
+ {
+  "id": 62,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Elixir Storage #4 -> 4",
+  "resource": "Gold",
+  "cost": 3000,
+  "days": 0.0104,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   61
+  ]
+ },
+ {
+  "id": 63,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Elixir Storage #4 -> 5",
+  "resource": "Gold",
+  "cost": 6000,
+  "days": 0.0208,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   62
+  ]
+ },
+ {
+  "id": 64,
+  "beforeTH": 11,
+  "availTH": 4,
+  "category": "Storage",
+  "name": "Elixir Storage #3 -> 8",
+  "resource": "Gold",
+  "cost": 50000,
+  "days": 0.125,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   59
+  ]
+ },
+ {
+  "id": 65,
+  "beforeTH": 11,
+  "availTH": 3,
+  "category": "Storage",
+  "name": "Elixir Storage #4 -> 6",
+  "resource": "Gold",
+  "cost": 12000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   63
+  ]
+ },
+ {
+  "id": 66,
+  "beforeTH": 11,
+  "availTH": 4,
+  "category": "Storage",
+  "name": "Elixir Storage #4 -> 7",
+  "resource": "Gold",
+  "cost": 25000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   65
+  ]
+ },
+ {
+  "id": 67,
+  "beforeTH": 11,
+  "availTH": 4,
+  "category": "Storage",
+  "name": "Elixir Storage #4 -> 8",
+  "resource": "Gold",
+  "cost": 50000,
+  "days": 0.125,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   66
+  ]
+ },
+ {
+  "id": 68,
+  "beforeTH": 11,
+  "availTH": 5,
+  "category": "Storage",
+  "name": "Elixir Storage #4 -> 9",
+  "resource": "Gold",
+  "cost": 100000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "Needed to hold 2,500,000 at TH10",
+  "requires": [
+   67
+  ]
+ },
+ {
+  "id": 69,
+  "beforeTH": 11,
+  "availTH": 10,
+  "category": "Hero Hall",
+  "name": "Hero Hall -> 4",
+  "resource": "Elixir",
+  "cost": 2500000,
+  "days": 4,
+  "include": true,
+  "notes": "Listed requirement.",
+  "requires": [
+   53
+  ]
+ },
+ {
+  "id": 70,
+  "beforeTH": 11,
+  "availTH": 10,
+  "category": "Town Hall",
+  "name": "Town Hall -> 11",
+  "resource": "Gold",
+  "cost": 4000000,
+  "days": 5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   51,
+   52,
+   53,
+   54,
+   55,
+   56,
+   57,
+   58,
+   59,
+   60,
+   61,
+   62,
+   63,
+   64,
+   65,
+   66,
+   67,
+   68,
+   69
+  ]
+ },
+ {
+  "id": 71,
+  "beforeTH": 12,
+  "availTH": 6,
+  "category": "Storage",
+  "name": "Gold Storage #3 -> 10",
+  "resource": "Elixir",
+  "cost": 250000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "Needed to hold 6,000,000 at TH11",
+  "requires": [
+   35
+  ]
+ },
+ {
+  "id": 72,
+  "beforeTH": 12,
+  "availTH": 7,
+  "category": "Storage",
+  "name": "Gold Storage #3 -> 11",
+  "resource": "Elixir",
+  "cost": 500000,
+  "days": 0.25,
+  "include": true,
+  "notes": "Needed to hold 6,000,000 at TH11",
+  "requires": [
+   71
+  ]
+ },
+ {
+  "id": 73,
+  "beforeTH": 12,
+  "availTH": 6,
+  "category": "Storage",
+  "name": "Elixir Storage #4 -> 10",
+  "resource": "Gold",
+  "cost": 250000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "Needed to hold 4,500,000 at TH11",
+  "requires": [
+   68
+  ]
+ },
+ {
+  "id": 74,
+  "beforeTH": 12,
+  "availTH": 5,
+  "category": "Storage",
+  "name": "Gold Storage #2 -> 9",
+  "resource": "Elixir",
+  "cost": 100000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "Needed to hold 6,000,000 at TH11",
+  "requires": [
+   21
+  ]
+ },
+ {
+  "id": 75,
+  "beforeTH": 12,
+  "availTH": 7,
+  "category": "Storage",
+  "name": "Elixir Storage #4 -> 11",
+  "resource": "Gold",
+  "cost": 500000,
+  "days": 0.25,
+  "include": true,
+  "notes": "Needed to hold 4,500,000 at TH11",
+  "requires": [
+   73
+  ]
+ },
+ {
+  "id": 76,
+  "beforeTH": 12,
+  "availTH": 5,
+  "category": "Storage",
+  "name": "Elixir Storage #3 -> 9",
+  "resource": "Gold",
+  "cost": 100000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "Needed to hold 4,500,000 at TH11",
+  "requires": [
+   64
+  ]
+ },
+ {
+  "id": 77,
+  "beforeTH": 12,
+  "availTH": 11,
+  "category": "Hero Hall",
+  "name": "Hero Hall -> 5",
+  "resource": "Elixir",
+  "cost": 4500000,
+  "days": 4.5,
+  "include": true,
+  "notes": "Listed requirement.",
+  "requires": [
+   69
+  ]
+ },
+ {
+  "id": 78,
+  "beforeTH": 12,
+  "availTH": 11,
+  "category": "Place new building",
+  "name": "Tornado Trap",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 79,
+  "beforeTH": 12,
+  "availTH": 11,
+  "category": "Place new building",
+  "name": "Eagle Artillery (build, Lv1)",
+  "resource": "Gold",
+  "cost": 5000000,
+  "days": 4,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 80,
+  "beforeTH": 12,
+  "availTH": 11,
+  "category": "Place new building",
+  "name": "X-Bow (new)",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.5,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 81,
+  "beforeTH": 12,
+  "availTH": 11,
+  "category": "Place new building",
+  "name": "Wizard Tower (new)",
+  "resource": "Gold",
+  "cost": 100000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 82,
+  "beforeTH": 12,
+  "availTH": 11,
+  "category": "Place new building",
+  "name": "Cannon (new)",
+  "resource": "Gold",
+  "cost": 250,
+  "days": 0.0417,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 83,
+  "beforeTH": 12,
+  "availTH": 11,
+  "category": "Place new building",
+  "name": "Archer Tower (new)",
+  "resource": "Gold",
+  "cost": 1000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 84,
+  "beforeTH": 12,
+  "availTH": 11,
+  "category": "Town Hall",
+  "name": "Town Hall -> 12",
+  "resource": "Gold",
+  "cost": 6000000,
+  "days": 6,
+  "include": true,
+  "notes": "",
+  "requires": [
+   70,
+   71,
+   72,
+   73,
+   74,
+   75,
+   76,
+   77,
+   78,
+   79,
+   80,
+   81,
+   82,
+   83
+  ]
+ },
+ {
+  "id": 85,
+  "beforeTH": 13,
+  "availTH": 6,
+  "category": "Storage",
+  "name": "Gold Storage #2 -> 10",
+  "resource": "Elixir",
+  "cost": 250000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "Needed to hold 9,000,000 at TH12",
+  "requires": [
+   74
+  ]
+ },
+ {
+  "id": 86,
+  "beforeTH": 13,
+  "availTH": 6,
+  "category": "Storage",
+  "name": "Elixir Storage #3 -> 10",
+  "resource": "Gold",
+  "cost": 250000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "Needed to hold 5,500,000 at TH12",
+  "requires": [
+   76
+  ]
+ },
+ {
+  "id": 87,
+  "beforeTH": 13,
+  "availTH": 7,
+  "category": "Storage",
+  "name": "Gold Storage #2 -> 11",
+  "resource": "Elixir",
+  "cost": 500000,
+  "days": 0.25,
+  "include": true,
+  "notes": "Needed to hold 9,000,000 at TH12",
+  "requires": [
+   85
+  ]
+ },
+ {
+  "id": 88,
+  "beforeTH": 13,
+  "availTH": 5,
+  "category": "Storage",
+  "name": "Elixir Storage #2 -> 9",
+  "resource": "Gold",
+  "cost": 100000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "Needed to hold 5,500,000 at TH12",
+  "requires": [
+   51
+  ]
+ },
+ {
+  "id": 89,
+  "beforeTH": 13,
+  "availTH": 4,
+  "category": "Storage",
+  "name": "Gold Storage #1 -> 8",
+  "resource": "Elixir",
+  "cost": 50000,
+  "days": 0.125,
+  "include": true,
+  "notes": "Needed to hold 9,000,000 at TH12",
+  "requires": [
+   19
+  ]
+ },
+ {
+  "id": 90,
+  "beforeTH": 13,
+  "availTH": 4,
+  "category": "Storage",
+  "name": "Elixir Storage #1 -> 8",
+  "resource": "Gold",
+  "cost": 50000,
+  "days": 0.125,
+  "include": true,
+  "notes": "Needed to hold 5,500,000 at TH12",
+  "requires": [
+   43
+  ]
+ },
+ {
+  "id": 91,
+  "beforeTH": 13,
+  "availTH": 5,
+  "category": "Storage",
+  "name": "Gold Storage #1 -> 9",
+  "resource": "Elixir",
+  "cost": 100000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "Needed to hold 9,000,000 at TH12",
+  "requires": [
+   89
+  ]
+ },
+ {
+  "id": 92,
+  "beforeTH": 13,
+  "availTH": 5,
+  "category": "Storage",
+  "name": "Elixir Storage #1 -> 9",
+  "resource": "Gold",
+  "cost": 100000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "Needed to hold 5,500,000 at TH12",
+  "requires": [
+   90
+  ]
+ },
+ {
+  "id": 93,
+  "beforeTH": 13,
+  "availTH": 6,
+  "category": "Storage",
+  "name": "Gold Storage #1 -> 10",
+  "resource": "Elixir",
+  "cost": 250000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "Needed to hold 9,000,000 at TH12",
+  "requires": [
+   91
+  ]
+ },
+ {
+  "id": 94,
+  "beforeTH": 13,
+  "availTH": 7,
+  "category": "Storage",
+  "name": "Gold Storage #1 -> 11",
+  "resource": "Elixir",
+  "cost": 500000,
+  "days": 0.25,
+  "include": true,
+  "notes": "Needed to hold 9,000,000 at TH12",
+  "requires": [
+   93
+  ]
+ },
+ {
+  "id": 95,
+  "beforeTH": 13,
+  "availTH": 12,
+  "category": "Hero Hall",
+  "name": "Hero Hall -> 6",
+  "resource": "Elixir",
+  "cost": 5500000,
+  "days": 5,
+  "include": true,
+  "notes": "Needed anyway: Hero Hall 7 and 9 are listed requirements and levels can't be skipped.",
+  "requires": [
+   77
+  ]
+ },
+ {
+  "id": 96,
+  "beforeTH": 13,
+  "availTH": 12,
+  "category": "Place new building",
+  "name": "TH12 traps (2 Spring, Air Bomb, SAM, Giant Bomb)",
+  "resource": "Gold",
+  "cost": 32500,
+  "days": 0,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 97,
+  "beforeTH": 13,
+  "availTH": 12,
+  "category": "Place new building",
+  "name": "Workshop",
+  "resource": "Elixir",
+  "cost": 2400000,
+  "days": 2,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 98,
+  "beforeTH": 13,
+  "availTH": 12,
+  "category": "Place new building",
+  "name": "Inferno Tower (new)",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.5,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 99,
+  "beforeTH": 13,
+  "availTH": 12,
+  "category": "Place new building",
+  "name": "Hidden Tesla (new)",
+  "resource": "Gold",
+  "cost": 250000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 100,
+  "beforeTH": 13,
+  "availTH": 12,
+  "category": "Town Hall",
+  "name": "Town Hall -> 13",
+  "resource": "Gold",
+  "cost": 9000000,
+  "days": 7,
+  "include": true,
+  "notes": "",
+  "requires": [
+   84,
+   85,
+   86,
+   87,
+   88,
+   89,
+   90,
+   91,
+   92,
+   93,
+   94,
+   95,
+   96,
+   97,
+   98,
+   99
+  ]
+ },
+ {
+  "id": 101,
+  "beforeTH": 14,
+  "availTH": 7,
+  "category": "Storage",
+  "name": "Elixir Storage #3 -> 11",
+  "resource": "Gold",
+  "cost": 500000,
+  "days": 0.25,
+  "include": true,
+  "notes": "Needed to hold 8,500,000 at TH13",
+  "requires": [
+   86
+  ]
+ },
+ {
+  "id": 102,
+  "beforeTH": 14,
+  "availTH": 6,
+  "category": "Storage",
+  "name": "Elixir Storage #1 -> 10",
+  "resource": "Gold",
+  "cost": 250000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "Needed to hold 8,500,000 at TH13",
+  "requires": [
+   92
+  ]
+ },
+ {
+  "id": 103,
+  "beforeTH": 14,
+  "availTH": 6,
+  "category": "Storage",
+  "name": "Elixir Storage #2 -> 10",
+  "resource": "Gold",
+  "cost": 250000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "Needed to hold 8,500,000 at TH13",
+  "requires": [
+   88
+  ]
+ },
+ {
+  "id": 104,
+  "beforeTH": 14,
+  "availTH": 7,
+  "category": "Storage",
+  "name": "Elixir Storage #1 -> 11",
+  "resource": "Gold",
+  "cost": 500000,
+  "days": 0.25,
+  "include": true,
+  "notes": "Needed to hold 8,500,000 at TH13",
+  "requires": [
+   102
+  ]
+ },
+ {
+  "id": 105,
+  "beforeTH": 14,
+  "availTH": 7,
+  "category": "Storage",
+  "name": "Elixir Storage #2 -> 11",
+  "resource": "Gold",
+  "cost": 500000,
+  "days": 0.25,
+  "include": true,
+  "notes": "Needed to hold 8,500,000 at TH13",
+  "requires": [
+   103
+  ]
+ },
+ {
+  "id": 106,
+  "beforeTH": 14,
+  "availTH": 11,
+  "category": "Storage",
+  "name": "Gold Storage #1 -> 12",
+  "resource": "Elixir",
+  "cost": 1000000,
+  "days": 0.5,
+  "include": true,
+  "notes": "Needed to hold 12,000,000 at TH13",
+  "requires": [
+   94
+  ]
+ },
+ {
+  "id": 107,
+  "beforeTH": 14,
+  "availTH": 11,
+  "category": "Storage",
+  "name": "Gold Storage #2 -> 12",
+  "resource": "Elixir",
+  "cost": 1000000,
+  "days": 0.5,
+  "include": true,
+  "notes": "Needed to hold 12,000,000 at TH13",
+  "requires": [
+   87
+  ]
+ },
+ {
+  "id": 108,
+  "beforeTH": 14,
+  "availTH": 11,
+  "category": "Storage",
+  "name": "Gold Storage #3 -> 12",
+  "resource": "Elixir",
+  "cost": 1000000,
+  "days": 0.5,
+  "include": true,
+  "notes": "Needed to hold 12,000,000 at TH13",
+  "requires": [
+   72
+  ]
+ },
+ {
+  "id": 109,
+  "beforeTH": 14,
+  "availTH": 11,
+  "category": "Storage",
+  "name": "Gold Storage #4 -> 12",
+  "resource": "Elixir",
+  "cost": 1000000,
+  "days": 0.5,
+  "include": true,
+  "notes": "Needed to hold 12,000,000 at TH13",
+  "requires": [
+   52
+  ]
+ },
+ {
+  "id": 110,
+  "beforeTH": 14,
+  "availTH": 12,
+  "category": "Storage",
+  "name": "Gold Storage #3 -> 13",
+  "resource": "Elixir",
+  "cost": 1800000,
+  "days": 0.75,
+  "include": true,
+  "notes": "Needed to hold 12,000,000 at TH13",
+  "requires": [
+   108
+  ]
+ },
+ {
+  "id": 111,
+  "beforeTH": 14,
+  "availTH": 12,
+  "category": "Storage",
+  "name": "Gold Storage #4 -> 13",
+  "resource": "Elixir",
+  "cost": 1800000,
+  "days": 0.75,
+  "include": true,
+  "notes": "Needed to hold 12,000,000 at TH13",
+  "requires": [
+   109
+  ]
+ },
+ {
+  "id": 112,
+  "beforeTH": 14,
+  "availTH": 13,
+  "category": "Hero Hall",
+  "name": "Hero Hall -> 7",
+  "resource": "Elixir",
+  "cost": 8500000,
+  "days": 6,
+  "include": true,
+  "notes": "Listed requirement.",
+  "requires": [
+   95
+  ]
+ },
+ {
+  "id": 113,
+  "beforeTH": 14,
+  "availTH": 13,
+  "category": "Place new building",
+  "name": "TH13 traps (Bomb, Spring, SAM)",
+  "resource": "Gold",
+  "cost": 14400,
+  "days": 0,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 114,
+  "beforeTH": 14,
+  "availTH": 13,
+  "category": "Place new building",
+  "name": "Scattershot #1",
+  "resource": "Gold",
+  "cost": 8000000,
+  "days": 5,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 115,
+  "beforeTH": 14,
+  "availTH": 13,
+  "category": "Place new building",
+  "name": "Scattershot #2",
+  "resource": "Gold",
+  "cost": 8000000,
+  "days": 5,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 116,
+  "beforeTH": 14,
+  "availTH": 13,
+  "category": "Town Hall",
+  "name": "Town Hall -> 14",
+  "resource": "Gold",
+  "cost": 12000000,
+  "days": 7.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   100,
+   101,
+   102,
+   103,
+   104,
+   105,
+   106,
+   107,
+   108,
+   109,
+   110,
+   111,
+   112,
+   113,
+   114,
+   115
+  ]
+ },
+ {
+  "id": 117,
+  "beforeTH": 15,
+  "availTH": 14,
+  "category": "Hero Hall",
+  "name": "Hero Hall -> 8",
+  "resource": "Elixir",
+  "cost": 9500000,
+  "days": 6.5,
+  "include": true,
+  "notes": "Needed anyway: Hero Hall 7 and 9 are listed requirements and levels can't be skipped.",
+  "requires": [
+   112
+  ]
+ },
+ {
+  "id": 118,
+  "beforeTH": 15,
+  "availTH": 14,
+  "category": "Place new building",
+  "name": "TH14 traps (Bomb, Air Bomb, SAM, Giant Bomb, Skeleton)",
+  "resource": "Gold",
+  "cost": 34900,
+  "days": 0,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 119,
+  "beforeTH": 15,
+  "availTH": 14,
+  "category": "Place new building",
+  "name": "Pet House",
+  "resource": "Elixir",
+  "cost": 3000000,
+  "days": 1,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 120,
+  "beforeTH": 15,
+  "availTH": 14,
+  "category": "Town Hall",
+  "name": "Town Hall -> 15",
+  "resource": "Gold",
+  "cost": 13000000,
+  "days": 8,
+  "include": true,
+  "notes": "",
+  "requires": [
+   116,
+   117,
+   118,
+   119
+  ]
+ },
+ {
+  "id": 121,
+  "beforeTH": 16,
+  "availTH": 11,
+  "category": "Storage",
+  "name": "Elixir Storage #4 -> 12",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.5,
+  "include": true,
+  "notes": "Needed to hold 11,000,000 at TH15",
+  "requires": [
+   75
+  ]
+ },
+ {
+  "id": 122,
+  "beforeTH": 16,
+  "availTH": 12,
+  "category": "Storage",
+  "name": "Gold Storage #1 -> 13",
+  "resource": "Elixir",
+  "cost": 1800000,
+  "days": 0.75,
+  "include": true,
+  "notes": "Needed to hold 15,000,000 at TH15",
+  "requires": [
+   106
+  ]
+ },
+ {
+  "id": 123,
+  "beforeTH": 16,
+  "availTH": 12,
+  "category": "Storage",
+  "name": "Gold Storage #2 -> 13",
+  "resource": "Elixir",
+  "cost": 1800000,
+  "days": 0.75,
+  "include": true,
+  "notes": "Needed to hold 15,000,000 at TH15",
+  "requires": [
+   107
+  ]
+ },
+ {
+  "id": 124,
+  "beforeTH": 16,
+  "availTH": 12,
+  "category": "Storage",
+  "name": "Elixir Storage #4 -> 13",
+  "resource": "Gold",
+  "cost": 1800000,
+  "days": 0.75,
+  "include": true,
+  "notes": "Needed to hold 11,000,000 at TH15",
+  "requires": [
+   121
+  ]
+ },
+ {
+  "id": 125,
+  "beforeTH": 16,
+  "availTH": 15,
+  "category": "Hero Hall",
+  "name": "Hero Hall -> 9",
+  "resource": "Elixir",
+  "cost": 11000000,
+  "days": 7,
+  "include": true,
+  "notes": "Listed requirement.",
+  "requires": [
+   117
+  ]
+ },
+ {
+  "id": 126,
+  "beforeTH": 16,
+  "availTH": 15,
+  "category": "Place new building",
+  "name": "Spell Tower #1",
+  "resource": "Gold",
+  "cost": 9000000,
+  "days": 7,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 127,
+  "beforeTH": 16,
+  "availTH": 15,
+  "category": "Place new building",
+  "name": "Spell Tower #2",
+  "resource": "Gold",
+  "cost": 9000000,
+  "days": 7,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 128,
+  "beforeTH": 16,
+  "availTH": 15,
+  "category": "Place new building",
+  "name": "Monolith",
+  "resource": "Dark Elixir",
+  "cost": 200000,
+  "days": 7,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 129,
+  "beforeTH": 16,
+  "availTH": 15,
+  "category": "Town Hall",
+  "name": "Town Hall -> 16",
+  "resource": "Gold",
+  "cost": 15000000,
+  "days": 9,
+  "include": true,
+  "notes": "",
+  "requires": [
+   120,
+   121,
+   122,
+   123,
+   124,
+   125,
+   126,
+   127,
+   128
+  ]
+ },
+ {
+  "id": 130,
+  "beforeTH": 17,
+  "availTH": 2,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 2",
+  "resource": "Gold",
+  "cost": 2000,
+  "days": 0.0014,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 131,
+  "beforeTH": 17,
+  "availTH": 3,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 3",
+  "resource": "Gold",
+  "cost": 5000,
+  "days": 0.0139,
+  "include": true,
+  "notes": "",
+  "requires": [
+   130
+  ]
+ },
+ {
+  "id": 132,
+  "beforeTH": 17,
+  "availTH": 4,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 4",
+  "resource": "Gold",
+  "cost": 20000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "",
+  "requires": [
+   131
+  ]
+ },
+ {
+  "id": 133,
+  "beforeTH": 17,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 5",
+  "resource": "Gold",
+  "cost": 70000,
+  "days": 0.0625,
+  "include": true,
+  "notes": "",
+  "requires": [
+   132
+  ]
+ },
+ {
+  "id": 134,
+  "beforeTH": 17,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 6",
+  "resource": "Gold",
+  "cost": 80000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "",
+  "requires": [
+   133
+  ]
+ },
+ {
+  "id": 135,
+  "beforeTH": 17,
+  "availTH": 2,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 2",
+  "resource": "Gold",
+  "cost": 2000,
+  "days": 0.0014,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 136,
+  "beforeTH": 17,
+  "availTH": 3,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 3",
+  "resource": "Gold",
+  "cost": 5000,
+  "days": 0.0139,
+  "include": true,
+  "notes": "",
+  "requires": [
+   135
+  ]
+ },
+ {
+  "id": 137,
+  "beforeTH": 17,
+  "availTH": 4,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 4",
+  "resource": "Gold",
+  "cost": 20000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "",
+  "requires": [
+   136
+  ]
+ },
+ {
+  "id": 138,
+  "beforeTH": 17,
+  "availTH": 6,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 7",
+  "resource": "Gold",
+  "cost": 150000,
+  "days": 0.125,
+  "include": true,
+  "notes": "",
+  "requires": [
+   134
+  ]
+ },
+ {
+  "id": 139,
+  "beforeTH": 17,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 5",
+  "resource": "Gold",
+  "cost": 70000,
+  "days": 0.0625,
+  "include": true,
+  "notes": "",
+  "requires": [
+   137
+  ]
+ },
+ {
+  "id": 140,
+  "beforeTH": 17,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 6",
+  "resource": "Gold",
+  "cost": 80000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "",
+  "requires": [
+   139
+  ]
+ },
+ {
+  "id": 141,
+  "beforeTH": 17,
+  "availTH": 7,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 8",
+  "resource": "Gold",
+  "cost": 200000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   138
+  ]
+ },
+ {
+  "id": 142,
+  "beforeTH": 17,
+  "availTH": 6,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 7",
+  "resource": "Gold",
+  "cost": 150000,
+  "days": 0.125,
+  "include": true,
+  "notes": "",
+  "requires": [
+   140
+  ]
+ },
+ {
+  "id": 143,
+  "beforeTH": 17,
+  "availTH": 7,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 8",
+  "resource": "Gold",
+  "cost": 200000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   142
+  ]
+ },
+ {
+  "id": 144,
+  "beforeTH": 17,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 9",
+  "resource": "Gold",
+  "cost": 400000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "",
+  "requires": [
+   141
+  ]
+ },
+ {
+  "id": 145,
+  "beforeTH": 17,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 9",
+  "resource": "Gold",
+  "cost": 400000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "",
+  "requires": [
+   143
+  ]
+ },
+ {
+  "id": 146,
+  "beforeTH": 17,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 10",
+  "resource": "Gold",
+  "cost": 460000,
+  "days": 0.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   144
+  ]
+ },
+ {
+  "id": 147,
+  "beforeTH": 17,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 10",
+  "resource": "Gold",
+  "cost": 460000,
+  "days": 0.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   145
+  ]
+ },
+ {
+  "id": 148,
+  "beforeTH": 17,
+  "availTH": 9,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 11",
+  "resource": "Gold",
+  "cost": 600000,
+  "days": 0.2917,
+  "include": true,
+  "notes": "",
+  "requires": [
+   146
+  ]
+ },
+ {
+  "id": 149,
+  "beforeTH": 17,
+  "availTH": 9,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 11",
+  "resource": "Gold",
+  "cost": 600000,
+  "days": 0.2917,
+  "include": true,
+  "notes": "",
+  "requires": [
+   147
+  ]
+ },
+ {
+  "id": 150,
+  "beforeTH": 17,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 12",
+  "resource": "Gold",
+  "cost": 700000,
+  "days": 0.3333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   148
+  ]
+ },
+ {
+  "id": 151,
+  "beforeTH": 17,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 12",
+  "resource": "Gold",
+  "cost": 700000,
+  "days": 0.3333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   149
+  ]
+ },
+ {
+  "id": 152,
+  "beforeTH": 17,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 13",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.4167,
+  "include": true,
+  "notes": "",
+  "requires": [
+   150
+  ]
+ },
+ {
+  "id": 153,
+  "beforeTH": 17,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 13",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.4167,
+  "include": true,
+  "notes": "",
+  "requires": [
+   151
+  ]
+ },
+ {
+  "id": 154,
+  "beforeTH": 17,
+  "availTH": 2,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 2",
+  "resource": "Gold",
+  "cost": 2000,
+  "days": 0.0014,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 155,
+  "beforeTH": 17,
+  "availTH": 3,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 3",
+  "resource": "Gold",
+  "cost": 5000,
+  "days": 0.0139,
+  "include": true,
+  "notes": "",
+  "requires": [
+   154
+  ]
+ },
+ {
+  "id": 156,
+  "beforeTH": 17,
+  "availTH": 4,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 4",
+  "resource": "Gold",
+  "cost": 20000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "",
+  "requires": [
+   155
+  ]
+ },
+ {
+  "id": 157,
+  "beforeTH": 17,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 5",
+  "resource": "Gold",
+  "cost": 70000,
+  "days": 0.0625,
+  "include": true,
+  "notes": "",
+  "requires": [
+   156
+  ]
+ },
+ {
+  "id": 158,
+  "beforeTH": 17,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 6",
+  "resource": "Gold",
+  "cost": 80000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "",
+  "requires": [
+   157
+  ]
+ },
+ {
+  "id": 159,
+  "beforeTH": 17,
+  "availTH": 2,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 2",
+  "resource": "Gold",
+  "cost": 2000,
+  "days": 0.0014,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 160,
+  "beforeTH": 17,
+  "availTH": 3,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 3",
+  "resource": "Gold",
+  "cost": 5000,
+  "days": 0.0139,
+  "include": true,
+  "notes": "",
+  "requires": [
+   159
+  ]
+ },
+ {
+  "id": 161,
+  "beforeTH": 17,
+  "availTH": 4,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 4",
+  "resource": "Gold",
+  "cost": 20000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "",
+  "requires": [
+   160
+  ]
+ },
+ {
+  "id": 162,
+  "beforeTH": 17,
+  "availTH": 6,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 7",
+  "resource": "Gold",
+  "cost": 150000,
+  "days": 0.125,
+  "include": true,
+  "notes": "",
+  "requires": [
+   158
+  ]
+ },
+ {
+  "id": 163,
+  "beforeTH": 17,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 5",
+  "resource": "Gold",
+  "cost": 70000,
+  "days": 0.0625,
+  "include": true,
+  "notes": "",
+  "requires": [
+   161
+  ]
+ },
+ {
+  "id": 164,
+  "beforeTH": 17,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 6",
+  "resource": "Gold",
+  "cost": 80000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "",
+  "requires": [
+   163
+  ]
+ },
+ {
+  "id": 165,
+  "beforeTH": 17,
+  "availTH": 7,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 8",
+  "resource": "Gold",
+  "cost": 200000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   162
+  ]
+ },
+ {
+  "id": 166,
+  "beforeTH": 17,
+  "availTH": 6,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 7",
+  "resource": "Gold",
+  "cost": 150000,
+  "days": 0.125,
+  "include": true,
+  "notes": "",
+  "requires": [
+   164
+  ]
+ },
+ {
+  "id": 167,
+  "beforeTH": 17,
+  "availTH": 7,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 8",
+  "resource": "Gold",
+  "cost": 200000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   166
+  ]
+ },
+ {
+  "id": 168,
+  "beforeTH": 17,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 9",
+  "resource": "Gold",
+  "cost": 400000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "",
+  "requires": [
+   165
+  ]
+ },
+ {
+  "id": 169,
+  "beforeTH": 17,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 9",
+  "resource": "Gold",
+  "cost": 400000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "",
+  "requires": [
+   167
+  ]
+ },
+ {
+  "id": 170,
+  "beforeTH": 17,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 10",
+  "resource": "Gold",
+  "cost": 460000,
+  "days": 0.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   168
+  ]
+ },
+ {
+  "id": 171,
+  "beforeTH": 17,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 10",
+  "resource": "Gold",
+  "cost": 460000,
+  "days": 0.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   169
+  ]
+ },
+ {
+  "id": 172,
+  "beforeTH": 17,
+  "availTH": 9,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 11",
+  "resource": "Gold",
+  "cost": 600000,
+  "days": 0.2917,
+  "include": true,
+  "notes": "",
+  "requires": [
+   170
+  ]
+ },
+ {
+  "id": 173,
+  "beforeTH": 17,
+  "availTH": 9,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 11",
+  "resource": "Gold",
+  "cost": 600000,
+  "days": 0.2917,
+  "include": true,
+  "notes": "",
+  "requires": [
+   171
+  ]
+ },
+ {
+  "id": 174,
+  "beforeTH": 17,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 12",
+  "resource": "Gold",
+  "cost": 700000,
+  "days": 0.3333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   172
+  ]
+ },
+ {
+  "id": 175,
+  "beforeTH": 17,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 12",
+  "resource": "Gold",
+  "cost": 700000,
+  "days": 0.3333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   173
+  ]
+ },
+ {
+  "id": 176,
+  "beforeTH": 17,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 13",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.4167,
+  "include": true,
+  "notes": "",
+  "requires": [
+   174
+  ]
+ },
+ {
+  "id": 177,
+  "beforeTH": 17,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 13",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.4167,
+  "include": true,
+  "notes": "",
+  "requires": [
+   175
+  ]
+ },
+ {
+  "id": 178,
+  "beforeTH": 17,
+  "availTH": 1,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 2",
+  "resource": "Gold",
+  "cost": 1000,
+  "days": 0.0003,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 179,
+  "beforeTH": 17,
+  "availTH": 2,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 3",
+  "resource": "Gold",
+  "cost": 4000,
+  "days": 0.0014,
+  "include": true,
+  "notes": "",
+  "requires": [
+   178
+  ]
+ },
+ {
+  "id": 180,
+  "beforeTH": 17,
+  "availTH": 3,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 4",
+  "resource": "Gold",
+  "cost": 16000,
+  "days": 0.0139,
+  "include": true,
+  "notes": "",
+  "requires": [
+   179
+  ]
+ },
+ {
+  "id": 181,
+  "beforeTH": 17,
+  "availTH": 4,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 5",
+  "resource": "Gold",
+  "cost": 50000,
+  "days": 0.0208,
+  "include": true,
+  "notes": "",
+  "requires": [
+   180
+  ]
+ },
+ {
+  "id": 182,
+  "beforeTH": 17,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 6",
+  "resource": "Gold",
+  "cost": 60000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "",
+  "requires": [
+   181
+  ]
+ },
+ {
+  "id": 183,
+  "beforeTH": 17,
+  "availTH": 6,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 7",
+  "resource": "Gold",
+  "cost": 100000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "",
+  "requires": [
+   182
+  ]
+ },
+ {
+  "id": 184,
+  "beforeTH": 17,
+  "availTH": 1,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 2",
+  "resource": "Gold",
+  "cost": 1000,
+  "days": 0.0003,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 185,
+  "beforeTH": 17,
+  "availTH": 2,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 3",
+  "resource": "Gold",
+  "cost": 4000,
+  "days": 0.0014,
+  "include": true,
+  "notes": "",
+  "requires": [
+   184
+  ]
+ },
+ {
+  "id": 186,
+  "beforeTH": 17,
+  "availTH": 3,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 4",
+  "resource": "Gold",
+  "cost": 16000,
+  "days": 0.0139,
+  "include": true,
+  "notes": "",
+  "requires": [
+   185
+  ]
+ },
+ {
+  "id": 187,
+  "beforeTH": 17,
+  "availTH": 7,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 8",
+  "resource": "Gold",
+  "cost": 160000,
+  "days": 0.125,
+  "include": true,
+  "notes": "",
+  "requires": [
+   183
+  ]
+ },
+ {
+  "id": 188,
+  "beforeTH": 17,
+  "availTH": 4,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 5",
+  "resource": "Gold",
+  "cost": 50000,
+  "days": 0.0208,
+  "include": true,
+  "notes": "",
+  "requires": [
+   186
+  ]
+ },
+ {
+  "id": 189,
+  "beforeTH": 17,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 6",
+  "resource": "Gold",
+  "cost": 60000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "",
+  "requires": [
+   188
+  ]
+ },
+ {
+  "id": 190,
+  "beforeTH": 17,
+  "availTH": 6,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 7",
+  "resource": "Gold",
+  "cost": 100000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "",
+  "requires": [
+   189
+  ]
+ },
+ {
+  "id": 191,
+  "beforeTH": 17,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 9",
+  "resource": "Gold",
+  "cost": 250000,
+  "days": 0.1458,
+  "include": true,
+  "notes": "",
+  "requires": [
+   187
+  ]
+ },
+ {
+  "id": 192,
+  "beforeTH": 17,
+  "availTH": 7,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 8",
+  "resource": "Gold",
+  "cost": 160000,
+  "days": 0.125,
+  "include": true,
+  "notes": "",
+  "requires": [
+   190
+  ]
+ },
+ {
+  "id": 193,
+  "beforeTH": 17,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 10",
+  "resource": "Gold",
+  "cost": 330000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   191
+  ]
+ },
+ {
+  "id": 194,
+  "beforeTH": 17,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 9",
+  "resource": "Gold",
+  "cost": 250000,
+  "days": 0.1458,
+  "include": true,
+  "notes": "",
+  "requires": [
+   192
+  ]
+ },
+ {
+  "id": 195,
+  "beforeTH": 17,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 10",
+  "resource": "Gold",
+  "cost": 330000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   194
+  ]
+ },
+ {
+  "id": 196,
+  "beforeTH": 17,
+  "availTH": 9,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 11",
+  "resource": "Gold",
+  "cost": 500000,
+  "days": 0.1875,
+  "include": true,
+  "notes": "",
+  "requires": [
+   193
+  ]
+ },
+ {
+  "id": 197,
+  "beforeTH": 17,
+  "availTH": 9,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 11",
+  "resource": "Gold",
+  "cost": 500000,
+  "days": 0.1875,
+  "include": true,
+  "notes": "",
+  "requires": [
+   195
+  ]
+ },
+ {
+  "id": 198,
+  "beforeTH": 17,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 12",
+  "resource": "Gold",
+  "cost": 600000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "",
+  "requires": [
+   196
+  ]
+ },
+ {
+  "id": 199,
+  "beforeTH": 17,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 12",
+  "resource": "Gold",
+  "cost": 600000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "",
+  "requires": [
+   197
+  ]
+ },
+ {
+  "id": 200,
+  "beforeTH": 17,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 13",
+  "resource": "Gold",
+  "cost": 660000,
+  "days": 0.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   198
+  ]
+ },
+ {
+  "id": 201,
+  "beforeTH": 17,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 13",
+  "resource": "Gold",
+  "cost": 660000,
+  "days": 0.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   199
+  ]
+ },
+ {
+  "id": 202,
+  "beforeTH": 17,
+  "availTH": 1,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 2",
+  "resource": "Gold",
+  "cost": 1000,
+  "days": 0.0003,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 203,
+  "beforeTH": 17,
+  "availTH": 2,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 3",
+  "resource": "Gold",
+  "cost": 4000,
+  "days": 0.0014,
+  "include": true,
+  "notes": "",
+  "requires": [
+   202
+  ]
+ },
+ {
+  "id": 204,
+  "beforeTH": 17,
+  "availTH": 3,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 4",
+  "resource": "Gold",
+  "cost": 16000,
+  "days": 0.0139,
+  "include": true,
+  "notes": "",
+  "requires": [
+   203
+  ]
+ },
+ {
+  "id": 205,
+  "beforeTH": 17,
+  "availTH": 4,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 5",
+  "resource": "Gold",
+  "cost": 50000,
+  "days": 0.0208,
+  "include": true,
+  "notes": "",
+  "requires": [
+   204
+  ]
+ },
+ {
+  "id": 206,
+  "beforeTH": 17,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 6",
+  "resource": "Gold",
+  "cost": 60000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "",
+  "requires": [
+   205
+  ]
+ },
+ {
+  "id": 207,
+  "beforeTH": 17,
+  "availTH": 6,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 7",
+  "resource": "Gold",
+  "cost": 100000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "",
+  "requires": [
+   206
+  ]
+ },
+ {
+  "id": 208,
+  "beforeTH": 17,
+  "availTH": 1,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 2",
+  "resource": "Gold",
+  "cost": 1000,
+  "days": 0.0003,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 209,
+  "beforeTH": 17,
+  "availTH": 2,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 3",
+  "resource": "Gold",
+  "cost": 4000,
+  "days": 0.0014,
+  "include": true,
+  "notes": "",
+  "requires": [
+   208
+  ]
+ },
+ {
+  "id": 210,
+  "beforeTH": 17,
+  "availTH": 3,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 4",
+  "resource": "Gold",
+  "cost": 16000,
+  "days": 0.0139,
+  "include": true,
+  "notes": "",
+  "requires": [
+   209
+  ]
+ },
+ {
+  "id": 211,
+  "beforeTH": 17,
+  "availTH": 7,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 8",
+  "resource": "Gold",
+  "cost": 160000,
+  "days": 0.125,
+  "include": true,
+  "notes": "",
+  "requires": [
+   207
+  ]
+ },
+ {
+  "id": 212,
+  "beforeTH": 17,
+  "availTH": 4,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 5",
+  "resource": "Gold",
+  "cost": 50000,
+  "days": 0.0208,
+  "include": true,
+  "notes": "",
+  "requires": [
+   210
+  ]
+ },
+ {
+  "id": 213,
+  "beforeTH": 17,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 6",
+  "resource": "Gold",
+  "cost": 60000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "",
+  "requires": [
+   212
+  ]
+ },
+ {
+  "id": 214,
+  "beforeTH": 17,
+  "availTH": 6,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 7",
+  "resource": "Gold",
+  "cost": 100000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "",
+  "requires": [
+   213
+  ]
+ },
+ {
+  "id": 215,
+  "beforeTH": 17,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 9",
+  "resource": "Gold",
+  "cost": 250000,
+  "days": 0.1458,
+  "include": true,
+  "notes": "",
+  "requires": [
+   211
+  ]
+ },
+ {
+  "id": 216,
+  "beforeTH": 17,
+  "availTH": 7,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 8",
+  "resource": "Gold",
+  "cost": 160000,
+  "days": 0.125,
+  "include": true,
+  "notes": "",
+  "requires": [
+   214
+  ]
+ },
+ {
+  "id": 217,
+  "beforeTH": 17,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 10",
+  "resource": "Gold",
+  "cost": 330000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   215
+  ]
+ },
+ {
+  "id": 218,
+  "beforeTH": 17,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 9",
+  "resource": "Gold",
+  "cost": 250000,
+  "days": 0.1458,
+  "include": true,
+  "notes": "",
+  "requires": [
+   216
+  ]
+ },
+ {
+  "id": 219,
+  "beforeTH": 17,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 10",
+  "resource": "Gold",
+  "cost": 330000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   218
+  ]
+ },
+ {
+  "id": 220,
+  "beforeTH": 17,
+  "availTH": 9,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 11",
+  "resource": "Gold",
+  "cost": 500000,
+  "days": 0.1875,
+  "include": true,
+  "notes": "",
+  "requires": [
+   217
+  ]
+ },
+ {
+  "id": 221,
+  "beforeTH": 17,
+  "availTH": 9,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 11",
+  "resource": "Gold",
+  "cost": 500000,
+  "days": 0.1875,
+  "include": true,
+  "notes": "",
+  "requires": [
+   219
+  ]
+ },
+ {
+  "id": 222,
+  "beforeTH": 17,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 12",
+  "resource": "Gold",
+  "cost": 600000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "",
+  "requires": [
+   220
+  ]
+ },
+ {
+  "id": 223,
+  "beforeTH": 17,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 12",
+  "resource": "Gold",
+  "cost": 600000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "",
+  "requires": [
+   221
+  ]
+ },
+ {
+  "id": 224,
+  "beforeTH": 17,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 13",
+  "resource": "Gold",
+  "cost": 660000,
+  "days": 0.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   222
+  ]
+ },
+ {
+  "id": 225,
+  "beforeTH": 17,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 13",
+  "resource": "Gold",
+  "cost": 660000,
+  "days": 0.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   223
+  ]
+ },
+ {
+  "id": 226,
+  "beforeTH": 17,
+  "availTH": 11,
+  "category": "Eagle Artillery",
+  "name": "Eagle Artillery -> 2",
+  "resource": "Gold",
+  "cost": 6000000,
+  "days": 5,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 227,
+  "beforeTH": 17,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 14",
+  "resource": "Gold",
+  "cost": 1100000,
+  "days": 0.4583,
+  "include": true,
+  "notes": "",
+  "requires": [
+   152
+  ]
+ },
+ {
+  "id": 228,
+  "beforeTH": 17,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 15",
+  "resource": "Gold",
+  "cost": 1300000,
+  "days": 0.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   227
+  ]
+ },
+ {
+  "id": 229,
+  "beforeTH": 17,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 14",
+  "resource": "Gold",
+  "cost": 1100000,
+  "days": 0.4583,
+  "include": true,
+  "notes": "",
+  "requires": [
+   153
+  ]
+ },
+ {
+  "id": 230,
+  "beforeTH": 17,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 15",
+  "resource": "Gold",
+  "cost": 1300000,
+  "days": 0.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   229
+  ]
+ },
+ {
+  "id": 231,
+  "beforeTH": 17,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 14",
+  "resource": "Gold",
+  "cost": 1100000,
+  "days": 0.4583,
+  "include": true,
+  "notes": "",
+  "requires": [
+   176
+  ]
+ },
+ {
+  "id": 232,
+  "beforeTH": 17,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 15",
+  "resource": "Gold",
+  "cost": 1300000,
+  "days": 0.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   231
+  ]
+ },
+ {
+  "id": 233,
+  "beforeTH": 17,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 14",
+  "resource": "Gold",
+  "cost": 1100000,
+  "days": 0.4583,
+  "include": true,
+  "notes": "",
+  "requires": [
+   177
+  ]
+ },
+ {
+  "id": 234,
+  "beforeTH": 17,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 15",
+  "resource": "Gold",
+  "cost": 1300000,
+  "days": 0.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   233
+  ]
+ },
+ {
+  "id": 235,
+  "beforeTH": 17,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 14",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.3333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   200
+  ]
+ },
+ {
+  "id": 236,
+  "beforeTH": 17,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 15",
+  "resource": "Gold",
+  "cost": 1200000,
+  "days": 0.4167,
+  "include": true,
+  "notes": "",
+  "requires": [
+   235
+  ]
+ },
+ {
+  "id": 237,
+  "beforeTH": 17,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 14",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.3333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   201
+  ]
+ },
+ {
+  "id": 238,
+  "beforeTH": 17,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 14",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.3333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   224
+  ]
+ },
+ {
+  "id": 239,
+  "beforeTH": 17,
+  "availTH": 12,
+  "category": "Eagle Artillery",
+  "name": "Eagle Artillery -> 3",
+  "resource": "Gold",
+  "cost": 9000000,
+  "days": 8,
+  "include": true,
+  "notes": "",
+  "requires": [
+   226
+  ]
+ },
+ {
+  "id": 240,
+  "beforeTH": 17,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 16",
+  "resource": "Gold",
+  "cost": 1600000,
+  "days": 0.6667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   228
+  ]
+ },
+ {
+  "id": 241,
+  "beforeTH": 17,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 17",
+  "resource": "Gold",
+  "cost": 1800000,
+  "days": 0.8333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   240
+  ]
+ },
+ {
+  "id": 242,
+  "beforeTH": 17,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 16",
+  "resource": "Gold",
+  "cost": 1600000,
+  "days": 0.6667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   230
+  ]
+ },
+ {
+  "id": 243,
+  "beforeTH": 17,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 17",
+  "resource": "Gold",
+  "cost": 1800000,
+  "days": 0.8333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   242
+  ]
+ },
+ {
+  "id": 244,
+  "beforeTH": 17,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 16",
+  "resource": "Gold",
+  "cost": 1600000,
+  "days": 0.6667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   232
+  ]
+ },
+ {
+  "id": 245,
+  "beforeTH": 17,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 17",
+  "resource": "Gold",
+  "cost": 1800000,
+  "days": 0.8333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   244
+  ]
+ },
+ {
+  "id": 246,
+  "beforeTH": 17,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 16",
+  "resource": "Gold",
+  "cost": 1600000,
+  "days": 0.6667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   234
+  ]
+ },
+ {
+  "id": 247,
+  "beforeTH": 17,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 17",
+  "resource": "Gold",
+  "cost": 1800000,
+  "days": 0.8333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   246
+  ]
+ },
+ {
+  "id": 248,
+  "beforeTH": 17,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 16",
+  "resource": "Gold",
+  "cost": 1300000,
+  "days": 0.4583,
+  "include": true,
+  "notes": "",
+  "requires": [
+   236
+  ]
+ },
+ {
+  "id": 249,
+  "beforeTH": 17,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 17",
+  "resource": "Gold",
+  "cost": 1500000,
+  "days": 0.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   248
+  ]
+ },
+ {
+  "id": 250,
+  "beforeTH": 17,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 15",
+  "resource": "Gold",
+  "cost": 1200000,
+  "days": 0.4167,
+  "include": true,
+  "notes": "",
+  "requires": [
+   237
+  ]
+ },
+ {
+  "id": 251,
+  "beforeTH": 17,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 16",
+  "resource": "Gold",
+  "cost": 1300000,
+  "days": 0.4583,
+  "include": true,
+  "notes": "",
+  "requires": [
+   250
+  ]
+ },
+ {
+  "id": 252,
+  "beforeTH": 17,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 15",
+  "resource": "Gold",
+  "cost": 1200000,
+  "days": 0.4167,
+  "include": true,
+  "notes": "",
+  "requires": [
+   238
+  ]
+ },
+ {
+  "id": 253,
+  "beforeTH": 17,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 16",
+  "resource": "Gold",
+  "cost": 1300000,
+  "days": 0.4583,
+  "include": true,
+  "notes": "",
+  "requires": [
+   252
+  ]
+ },
+ {
+  "id": 254,
+  "beforeTH": 17,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 17",
+  "resource": "Gold",
+  "cost": 1500000,
+  "days": 0.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   251
+  ]
+ },
+ {
+  "id": 255,
+  "beforeTH": 17,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 17",
+  "resource": "Gold",
+  "cost": 1500000,
+  "days": 0.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   253
+  ]
+ },
+ {
+  "id": 256,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Eagle Artillery",
+  "name": "Eagle Artillery -> 4",
+  "resource": "Gold",
+  "cost": 11000000,
+  "days": 9,
+  "include": true,
+  "notes": "",
+  "requires": [
+   239
+  ]
+ },
+ {
+  "id": 257,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 18",
+  "resource": "Gold",
+  "cost": 2000000,
+  "days": 1,
+  "include": true,
+  "notes": "",
+  "requires": [
+   241
+  ]
+ },
+ {
+  "id": 258,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 19",
+  "resource": "Gold",
+  "cost": 2200000,
+  "days": 1.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   257
+  ]
+ },
+ {
+  "id": 259,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 18",
+  "resource": "Gold",
+  "cost": 2000000,
+  "days": 1,
+  "include": true,
+  "notes": "",
+  "requires": [
+   243
+  ]
+ },
+ {
+  "id": 260,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 19",
+  "resource": "Gold",
+  "cost": 2200000,
+  "days": 1.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   259
+  ]
+ },
+ {
+  "id": 261,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 18",
+  "resource": "Gold",
+  "cost": 2000000,
+  "days": 1,
+  "include": true,
+  "notes": "",
+  "requires": [
+   245
+  ]
+ },
+ {
+  "id": 262,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 19",
+  "resource": "Gold",
+  "cost": 2200000,
+  "days": 1.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   261
+  ]
+ },
+ {
+  "id": 263,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 18",
+  "resource": "Gold",
+  "cost": 2000000,
+  "days": 1,
+  "include": true,
+  "notes": "",
+  "requires": [
+   247
+  ]
+ },
+ {
+  "id": 264,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 19",
+  "resource": "Gold",
+  "cost": 2200000,
+  "days": 1.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   263
+  ]
+ },
+ {
+  "id": 265,
+  "beforeTH": 17,
+  "availTH": 14,
+  "category": "Eagle Artillery",
+  "name": "Eagle Artillery -> 5",
+  "resource": "Gold",
+  "cost": 13000000,
+  "days": 12,
+  "include": true,
+  "notes": "",
+  "requires": [
+   256
+  ]
+ },
+ {
+  "id": 266,
+  "beforeTH": 17,
+  "availTH": 14,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 20",
+  "resource": "Gold",
+  "cost": 3000000,
+  "days": 1.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   258
+  ]
+ },
+ {
+  "id": 267,
+  "beforeTH": 17,
+  "availTH": 14,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 20",
+  "resource": "Gold",
+  "cost": 3000000,
+  "days": 1.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   260
+  ]
+ },
+ {
+  "id": 268,
+  "beforeTH": 17,
+  "availTH": 14,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 20",
+  "resource": "Gold",
+  "cost": 3000000,
+  "days": 1.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   262
+  ]
+ },
+ {
+  "id": 269,
+  "beforeTH": 17,
+  "availTH": 14,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 20",
+  "resource": "Gold",
+  "cost": 3000000,
+  "days": 1.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   264
+  ]
+ },
+ {
+  "id": 270,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Storage",
+  "name": "Gold Storage #3 -> 14",
+  "resource": "Elixir",
+  "cost": 2800000,
+  "days": 1,
+  "include": true,
+  "notes": "Needed to hold 17,500,000 at TH16",
+  "requires": [
+   110
+  ]
+ },
+ {
+  "id": 271,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Storage",
+  "name": "Gold Storage #4 -> 14",
+  "resource": "Elixir",
+  "cost": 2800000,
+  "days": 1,
+  "include": true,
+  "notes": "Needed to hold 17,500,000 at TH16",
+  "requires": [
+   111
+  ]
+ },
+ {
+  "id": 272,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Storage",
+  "name": "Elixir Storage #4 -> 14",
+  "resource": "Gold",
+  "cost": 2800000,
+  "days": 1,
+  "include": true,
+  "notes": "Needed to hold 13,000,000 at TH16",
+  "requires": [
+   124
+  ]
+ },
+ {
+  "id": 273,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 18",
+  "resource": "Gold",
+  "cost": 1800000,
+  "days": 0.6667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   249
+  ]
+ },
+ {
+  "id": 274,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 19",
+  "resource": "Gold",
+  "cost": 2000000,
+  "days": 0.8333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   273
+  ]
+ },
+ {
+  "id": 275,
+  "beforeTH": 17,
+  "availTH": 14,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 20",
+  "resource": "Gold",
+  "cost": 2600000,
+  "days": 1,
+  "include": true,
+  "notes": "",
+  "requires": [
+   274
+  ]
+ },
+ {
+  "id": 276,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 18",
+  "resource": "Gold",
+  "cost": 1800000,
+  "days": 0.6667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   254
+  ]
+ },
+ {
+  "id": 277,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 18",
+  "resource": "Gold",
+  "cost": 1800000,
+  "days": 0.6667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   255
+  ]
+ },
+ {
+  "id": 278,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 19",
+  "resource": "Gold",
+  "cost": 2000000,
+  "days": 0.8333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   276
+  ]
+ },
+ {
+  "id": 279,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 19",
+  "resource": "Gold",
+  "cost": 2000000,
+  "days": 0.8333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   277
+  ]
+ },
+ {
+  "id": 280,
+  "beforeTH": 17,
+  "availTH": 14,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 20",
+  "resource": "Gold",
+  "cost": 2600000,
+  "days": 1,
+  "include": true,
+  "notes": "",
+  "requires": [
+   278
+  ]
+ },
+ {
+  "id": 281,
+  "beforeTH": 17,
+  "availTH": 15,
+  "category": "Eagle Artillery",
+  "name": "Eagle Artillery -> 6",
+  "resource": "Gold",
+  "cost": 14000000,
+  "days": 12.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   265
+  ]
+ },
+ {
+  "id": 282,
+  "beforeTH": 17,
+  "availTH": 15,
+  "category": "Merge prep",
+  "name": "Archer Tower #1 -> 21",
+  "resource": "Gold",
+  "cost": 4000000,
+  "days": 2,
+  "include": true,
+  "notes": "",
+  "requires": [
+   266
+  ]
+ },
+ {
+  "id": 283,
+  "beforeTH": 17,
+  "availTH": 15,
+  "category": "Merge prep",
+  "name": "Archer Tower #2 -> 21",
+  "resource": "Gold",
+  "cost": 4000000,
+  "days": 2,
+  "include": true,
+  "notes": "",
+  "requires": [
+   267
+  ]
+ },
+ {
+  "id": 284,
+  "beforeTH": 17,
+  "availTH": 15,
+  "category": "Merge prep",
+  "name": "Archer Tower #3 -> 21",
+  "resource": "Gold",
+  "cost": 4000000,
+  "days": 2,
+  "include": true,
+  "notes": "",
+  "requires": [
+   268
+  ]
+ },
+ {
+  "id": 285,
+  "beforeTH": 17,
+  "availTH": 15,
+  "category": "Merge prep",
+  "name": "Archer Tower #4 -> 21",
+  "resource": "Gold",
+  "cost": 4000000,
+  "days": 2,
+  "include": true,
+  "notes": "",
+  "requires": [
+   269
+  ]
+ },
+ {
+  "id": 286,
+  "beforeTH": 17,
+  "availTH": 15,
+  "category": "Merge prep",
+  "name": "Cannon #1 -> 21",
+  "resource": "Gold",
+  "cost": 3000000,
+  "days": 1.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   275
+  ]
+ },
+ {
+  "id": 287,
+  "beforeTH": 17,
+  "availTH": 15,
+  "category": "Merge prep",
+  "name": "Cannon #2 -> 21",
+  "resource": "Gold",
+  "cost": 3000000,
+  "days": 1.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   280
+  ]
+ },
+ {
+  "id": 288,
+  "beforeTH": 17,
+  "availTH": 14,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 20",
+  "resource": "Gold",
+  "cost": 2600000,
+  "days": 1,
+  "include": true,
+  "notes": "",
+  "requires": [
+   279
+  ]
+ },
+ {
+  "id": 289,
+  "beforeTH": 17,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 14",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.3333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   225
+  ]
+ },
+ {
+  "id": 290,
+  "beforeTH": 17,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 15",
+  "resource": "Gold",
+  "cost": 1200000,
+  "days": 0.4167,
+  "include": true,
+  "notes": "",
+  "requires": [
+   289
+  ]
+ },
+ {
+  "id": 291,
+  "beforeTH": 17,
+  "availTH": 15,
+  "category": "Merge prep",
+  "name": "Cannon #3 -> 21",
+  "resource": "Gold",
+  "cost": 3000000,
+  "days": 1.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   288
+  ]
+ },
+ {
+  "id": 292,
+  "beforeTH": 17,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 16",
+  "resource": "Gold",
+  "cost": 1300000,
+  "days": 0.4583,
+  "include": true,
+  "notes": "",
+  "requires": [
+   290
+  ]
+ },
+ {
+  "id": 293,
+  "beforeTH": 17,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 17",
+  "resource": "Gold",
+  "cost": 1500000,
+  "days": 0.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   292
+  ]
+ },
+ {
+  "id": 294,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 18",
+  "resource": "Gold",
+  "cost": 1800000,
+  "days": 0.6667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   293
+  ]
+ },
+ {
+  "id": 295,
+  "beforeTH": 17,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 19",
+  "resource": "Gold",
+  "cost": 2000000,
+  "days": 0.8333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   294
+  ]
+ },
+ {
+  "id": 296,
+  "beforeTH": 17,
+  "availTH": 14,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 20",
+  "resource": "Gold",
+  "cost": 2600000,
+  "days": 1,
+  "include": true,
+  "notes": "",
+  "requires": [
+   295
+  ]
+ },
+ {
+  "id": 297,
+  "beforeTH": 17,
+  "availTH": 16,
+  "category": "Eagle Artillery",
+  "name": "Eagle Artillery -> 7",
+  "resource": "Gold",
+  "cost": 17500000,
+  "days": 13,
+  "include": true,
+  "notes": "",
+  "requires": [
+   281
+  ]
+ },
+ {
+  "id": 298,
+  "beforeTH": 17,
+  "availTH": 16,
+  "category": "Hero Hall",
+  "name": "Hero Hall -> 10",
+  "resource": "Elixir",
+  "cost": 13000000,
+  "days": 8,
+  "include": true,
+  "notes": "Main wiki Town Hall page: Hero Hall must be maxed from TH8 on. The requirements list omits this level. Set Include to No if the game lets you skip it.",
+  "requires": [
+   125
+  ]
+ },
+ {
+  "id": 299,
+  "beforeTH": 17,
+  "availTH": 16,
+  "category": "Merge",
+  "name": "Ricochet Cannon #1 (merge)",
+  "resource": "Gold",
+  "cost": 12000000,
+  "days": 7,
+  "include": true,
+  "notes": "",
+  "requires": [
+   286,
+   287
+  ]
+ },
+ {
+  "id": 300,
+  "beforeTH": 17,
+  "availTH": 16,
+  "category": "Merge",
+  "name": "Multi-Archer Tower #1 (merge)",
+  "resource": "Gold",
+  "cost": 12000000,
+  "days": 7,
+  "include": true,
+  "notes": "",
+  "requires": [
+   282,
+   283
+  ]
+ },
+ {
+  "id": 301,
+  "beforeTH": 17,
+  "availTH": 16,
+  "category": "Merge",
+  "name": "Multi-Archer Tower #2 (merge)",
+  "resource": "Gold",
+  "cost": 12000000,
+  "days": 7,
+  "include": true,
+  "notes": "",
+  "requires": [
+   284,
+   285
+  ]
+ },
+ {
+  "id": 302,
+  "beforeTH": 17,
+  "availTH": 15,
+  "category": "Merge prep",
+  "name": "Cannon #4 -> 21",
+  "resource": "Gold",
+  "cost": 3000000,
+  "days": 1.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   296
+  ]
+ },
+ {
+  "id": 303,
+  "beforeTH": 17,
+  "availTH": 16,
+  "category": "Merge",
+  "name": "Ricochet Cannon #2 (merge)",
+  "resource": "Gold",
+  "cost": 12000000,
+  "days": 7,
+  "include": true,
+  "notes": "",
+  "requires": [
+   291,
+   302
+  ]
+ },
+ {
+  "id": 304,
+  "beforeTH": 17,
+  "availTH": 16,
+  "category": "Town Hall",
+  "name": "Town Hall -> 17",
+  "resource": "Gold",
+  "cost": 16000000,
+  "days": 10,
+  "include": true,
+  "notes": "",
+  "requires": [
+   129,
+   130,
+   131,
+   132,
+   133,
+   134,
+   135,
+   136,
+   137,
+   138,
+   139,
+   140,
+   141,
+   142,
+   143,
+   144,
+   145,
+   146,
+   147,
+   148,
+   149,
+   150,
+   151,
+   152,
+   153,
+   154,
+   155,
+   156,
+   157,
+   158,
+   159,
+   160,
+   161,
+   162,
+   163,
+   164,
+   165,
+   166,
+   167,
+   168,
+   169,
+   170,
+   171,
+   172,
+   173,
+   174,
+   175,
+   176,
+   177,
+   178,
+   179,
+   180,
+   181,
+   182,
+   183,
+   184,
+   185,
+   186,
+   187,
+   188,
+   189,
+   190,
+   191,
+   192,
+   193,
+   194,
+   195,
+   196,
+   197,
+   198,
+   199,
+   200,
+   201,
+   202,
+   203,
+   204,
+   205,
+   206,
+   207,
+   208,
+   209,
+   210,
+   211,
+   212,
+   213,
+   214,
+   215,
+   216,
+   217,
+   218,
+   219,
+   220,
+   221,
+   222,
+   223,
+   224,
+   225,
+   226,
+   227,
+   228,
+   229,
+   230,
+   231,
+   232,
+   233,
+   234,
+   235,
+   236,
+   237,
+   238,
+   239,
+   240,
+   241,
+   242,
+   243,
+   244,
+   245,
+   246,
+   247,
+   248,
+   249,
+   250,
+   251,
+   252,
+   253,
+   254,
+   255,
+   256,
+   257,
+   258,
+   259,
+   260,
+   261,
+   262,
+   263,
+   264,
+   265,
+   266,
+   267,
+   268,
+   269,
+   270,
+   271,
+   272,
+   273,
+   274,
+   275,
+   276,
+   277,
+   278,
+   279,
+   280,
+   281,
+   282,
+   283,
+   284,
+   285,
+   286,
+   287,
+   288,
+   289,
+   290,
+   291,
+   292,
+   293,
+   294,
+   295,
+   296,
+   297,
+   298,
+   299,
+   300,
+   301,
+   302,
+   303
+  ]
+ },
+ {
+  "id": 305,
+  "beforeTH": 18,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 Gear Up",
+  "resource": "Gold",
+  "cost": 3000000,
+  "days": 7,
+  "include": true,
+  "notes": "Needs Builder Base: Double Cannon Lv4 (cannon) / matching BB building (archer tower)",
+  "requires": [
+   394
+  ]
+ },
+ {
+  "id": 306,
+  "beforeTH": 18,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Cannon #7 Gear Up",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 2,
+  "include": true,
+  "notes": "Needs Builder Base: Double Cannon Lv4 (cannon) / matching BB building (archer tower)",
+  "requires": [
+   456
+  ]
+ },
+ {
+  "id": 307,
+  "beforeTH": 18,
+  "availTH": 2,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 2",
+  "resource": "Gold",
+  "cost": 2000,
+  "days": 0.0014,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 308,
+  "beforeTH": 18,
+  "availTH": 3,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 3",
+  "resource": "Gold",
+  "cost": 5000,
+  "days": 0.0139,
+  "include": true,
+  "notes": "",
+  "requires": [
+   307
+  ]
+ },
+ {
+  "id": 309,
+  "beforeTH": 18,
+  "availTH": 4,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 4",
+  "resource": "Gold",
+  "cost": 20000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "",
+  "requires": [
+   308
+  ]
+ },
+ {
+  "id": 310,
+  "beforeTH": 18,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 5",
+  "resource": "Gold",
+  "cost": 70000,
+  "days": 0.0625,
+  "include": true,
+  "notes": "",
+  "requires": [
+   309
+  ]
+ },
+ {
+  "id": 311,
+  "beforeTH": 18,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 6",
+  "resource": "Gold",
+  "cost": 80000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "",
+  "requires": [
+   310
+  ]
+ },
+ {
+  "id": 312,
+  "beforeTH": 18,
+  "availTH": 6,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 7",
+  "resource": "Gold",
+  "cost": 150000,
+  "days": 0.125,
+  "include": true,
+  "notes": "",
+  "requires": [
+   311
+  ]
+ },
+ {
+  "id": 313,
+  "beforeTH": 18,
+  "availTH": 7,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 8",
+  "resource": "Gold",
+  "cost": 200000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   312
+  ]
+ },
+ {
+  "id": 314,
+  "beforeTH": 18,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 9",
+  "resource": "Gold",
+  "cost": 400000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "",
+  "requires": [
+   313
+  ]
+ },
+ {
+  "id": 315,
+  "beforeTH": 18,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 10",
+  "resource": "Gold",
+  "cost": 460000,
+  "days": 0.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   314
+  ]
+ },
+ {
+  "id": 316,
+  "beforeTH": 18,
+  "availTH": 14,
+  "category": "Storage",
+  "name": "Gold Storage #3 -> 15",
+  "resource": "Elixir",
+  "cost": 3000000,
+  "days": 2,
+  "include": true,
+  "notes": "Needed to hold 25,000,000 at TH17",
+  "requires": [
+   270
+  ]
+ },
+ {
+  "id": 317,
+  "beforeTH": 18,
+  "availTH": 15,
+  "category": "Storage",
+  "name": "Gold Storage #3 -> 16",
+  "resource": "Elixir",
+  "cost": 4000000,
+  "days": 3,
+  "include": true,
+  "notes": "Needed to hold 25,000,000 at TH17",
+  "requires": [
+   316
+  ]
+ },
+ {
+  "id": 318,
+  "beforeTH": 18,
+  "availTH": 14,
+  "category": "Storage",
+  "name": "Gold Storage #4 -> 15",
+  "resource": "Elixir",
+  "cost": 3000000,
+  "days": 2,
+  "include": true,
+  "notes": "Needed to hold 25,000,000 at TH17",
+  "requires": [
+   271
+  ]
+ },
+ {
+  "id": 319,
+  "beforeTH": 18,
+  "availTH": 15,
+  "category": "Storage",
+  "name": "Gold Storage #4 -> 16",
+  "resource": "Elixir",
+  "cost": 4000000,
+  "days": 3,
+  "include": true,
+  "notes": "Needed to hold 25,000,000 at TH17",
+  "requires": [
+   318
+  ]
+ },
+ {
+  "id": 320,
+  "beforeTH": 18,
+  "availTH": 16,
+  "category": "Storage",
+  "name": "Gold Storage #3 -> 17",
+  "resource": "Elixir",
+  "cost": 5500000,
+  "days": 4,
+  "include": true,
+  "notes": "Needed to hold 25,000,000 at TH17",
+  "requires": [
+   317
+  ]
+ },
+ {
+  "id": 321,
+  "beforeTH": 18,
+  "availTH": 16,
+  "category": "Storage",
+  "name": "Gold Storage #4 -> 17",
+  "resource": "Elixir",
+  "cost": 5500000,
+  "days": 4,
+  "include": true,
+  "notes": "Needed to hold 25,000,000 at TH17",
+  "requires": [
+   319
+  ]
+ },
+ {
+  "id": 322,
+  "beforeTH": 18,
+  "availTH": 13,
+  "category": "Storage",
+  "name": "Gold Storage #1 -> 14",
+  "resource": "Elixir",
+  "cost": 2800000,
+  "days": 1,
+  "include": true,
+  "notes": "Needed to hold 25,000,000 at TH17",
+  "requires": [
+   122
+  ]
+ },
+ {
+  "id": 323,
+  "beforeTH": 18,
+  "availTH": 14,
+  "category": "Storage",
+  "name": "Gold Storage #1 -> 15",
+  "resource": "Elixir",
+  "cost": 3000000,
+  "days": 2,
+  "include": true,
+  "notes": "Needed to hold 25,000,000 at TH17",
+  "requires": [
+   322
+  ]
+ },
+ {
+  "id": 324,
+  "beforeTH": 18,
+  "availTH": 13,
+  "category": "Storage",
+  "name": "Gold Storage #2 -> 14",
+  "resource": "Elixir",
+  "cost": 2800000,
+  "days": 1,
+  "include": true,
+  "notes": "Needed to hold 25,000,000 at TH17",
+  "requires": [
+   123
+  ]
+ },
+ {
+  "id": 325,
+  "beforeTH": 18,
+  "availTH": 15,
+  "category": "Storage",
+  "name": "Gold Storage #1 -> 16",
+  "resource": "Elixir",
+  "cost": 4000000,
+  "days": 3,
+  "include": true,
+  "notes": "Needed to hold 25,000,000 at TH17",
+  "requires": [
+   323
+  ]
+ },
+ {
+  "id": 326,
+  "beforeTH": 18,
+  "availTH": 14,
+  "category": "Storage",
+  "name": "Gold Storage #2 -> 15",
+  "resource": "Elixir",
+  "cost": 3000000,
+  "days": 2,
+  "include": true,
+  "notes": "Needed to hold 25,000,000 at TH17",
+  "requires": [
+   324
+  ]
+ },
+ {
+  "id": 327,
+  "beforeTH": 18,
+  "availTH": 15,
+  "category": "Storage",
+  "name": "Gold Storage #2 -> 16",
+  "resource": "Elixir",
+  "cost": 4000000,
+  "days": 3,
+  "include": true,
+  "notes": "Needed to hold 25,000,000 at TH17",
+  "requires": [
+   326
+  ]
+ },
+ {
+  "id": 328,
+  "beforeTH": 18,
+  "availTH": 11,
+  "category": "Storage",
+  "name": "Elixir Storage #1 -> 12",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.5,
+  "include": true,
+  "notes": "Needed to hold 17,000,000 at TH17",
+  "requires": [
+   104
+  ]
+ },
+ {
+  "id": 329,
+  "beforeTH": 18,
+  "availTH": 12,
+  "category": "Storage",
+  "name": "Elixir Storage #1 -> 13",
+  "resource": "Gold",
+  "cost": 1800000,
+  "days": 0.75,
+  "include": true,
+  "notes": "Needed to hold 17,000,000 at TH17",
+  "requires": [
+   328
+  ]
+ },
+ {
+  "id": 330,
+  "beforeTH": 18,
+  "availTH": 11,
+  "category": "Storage",
+  "name": "Elixir Storage #2 -> 12",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.5,
+  "include": true,
+  "notes": "Needed to hold 17,000,000 at TH17",
+  "requires": [
+   105
+  ]
+ },
+ {
+  "id": 331,
+  "beforeTH": 18,
+  "availTH": 12,
+  "category": "Storage",
+  "name": "Elixir Storage #2 -> 13",
+  "resource": "Gold",
+  "cost": 1800000,
+  "days": 0.75,
+  "include": true,
+  "notes": "Needed to hold 17,000,000 at TH17",
+  "requires": [
+   330
+  ]
+ },
+ {
+  "id": 332,
+  "beforeTH": 18,
+  "availTH": 11,
+  "category": "Storage",
+  "name": "Elixir Storage #3 -> 12",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.5,
+  "include": true,
+  "notes": "Needed to hold 17,000,000 at TH17",
+  "requires": [
+   101
+  ]
+ },
+ {
+  "id": 333,
+  "beforeTH": 18,
+  "availTH": 9,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 11",
+  "resource": "Gold",
+  "cost": 600000,
+  "days": 0.2917,
+  "include": true,
+  "notes": "",
+  "requires": [
+   315
+  ]
+ },
+ {
+  "id": 334,
+  "beforeTH": 18,
+  "availTH": 12,
+  "category": "Storage",
+  "name": "Elixir Storage #3 -> 13",
+  "resource": "Gold",
+  "cost": 1800000,
+  "days": 0.75,
+  "include": true,
+  "notes": "Needed to hold 17,000,000 at TH17",
+  "requires": [
+   332
+  ]
+ },
+ {
+  "id": 335,
+  "beforeTH": 18,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 12",
+  "resource": "Gold",
+  "cost": 700000,
+  "days": 0.3333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   333
+  ]
+ },
+ {
+  "id": 336,
+  "beforeTH": 18,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 13",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.4167,
+  "include": true,
+  "notes": "",
+  "requires": [
+   335
+  ]
+ },
+ {
+  "id": 337,
+  "beforeTH": 18,
+  "availTH": 2,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 2",
+  "resource": "Gold",
+  "cost": 2000,
+  "days": 0.0014,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 338,
+  "beforeTH": 18,
+  "availTH": 3,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 3",
+  "resource": "Gold",
+  "cost": 5000,
+  "days": 0.0139,
+  "include": true,
+  "notes": "",
+  "requires": [
+   337
+  ]
+ },
+ {
+  "id": 339,
+  "beforeTH": 18,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 14",
+  "resource": "Gold",
+  "cost": 1100000,
+  "days": 0.4583,
+  "include": true,
+  "notes": "",
+  "requires": [
+   336
+  ]
+ },
+ {
+  "id": 340,
+  "beforeTH": 18,
+  "availTH": 4,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 4",
+  "resource": "Gold",
+  "cost": 20000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "",
+  "requires": [
+   338
+  ]
+ },
+ {
+  "id": 341,
+  "beforeTH": 18,
+  "availTH": 17,
+  "category": "Hero Hall",
+  "name": "Hero Hall -> 11",
+  "resource": "Elixir",
+  "cost": 17000000,
+  "days": 9.5,
+  "include": true,
+  "notes": "Main wiki Town Hall page: Hero Hall must be maxed from TH8 on. The requirements list omits this level. Set Include to No if the game lets you skip it.",
+  "requires": [
+   298
+  ]
+ },
+ {
+  "id": 342,
+  "beforeTH": 18,
+  "availTH": 17,
+  "category": "Place new building",
+  "name": "TH17 traps (Giant Bomb, SAM)",
+  "resource": "Gold",
+  "cost": 24500,
+  "days": 0,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 343,
+  "beforeTH": 18,
+  "availTH": 17,
+  "category": "Place new building",
+  "name": "Giga Bomb",
+  "resource": "Gold",
+  "cost": 4500000,
+  "days": 0,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 344,
+  "beforeTH": 18,
+  "availTH": 17,
+  "category": "Place new building",
+  "name": "Firespitter #1",
+  "resource": "Gold",
+  "cost": 17000000,
+  "days": 8.5,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 345,
+  "beforeTH": 18,
+  "availTH": 17,
+  "category": "Place new building",
+  "name": "Firespitter #2",
+  "resource": "Gold",
+  "cost": 17000000,
+  "days": 8.5,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 346,
+  "beforeTH": 18,
+  "availTH": 17,
+  "category": "Inferno Artillery",
+  "name": "Inferno Artillery -> 2",
+  "resource": "Gold",
+  "cost": 10000000,
+  "days": 6,
+  "include": true,
+  "notes": "",
+  "requires": [
+   297
+  ]
+ },
+ {
+  "id": 347,
+  "beforeTH": 18,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 15",
+  "resource": "Gold",
+  "cost": 1300000,
+  "days": 0.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   339
+  ]
+ },
+ {
+  "id": 348,
+  "beforeTH": 18,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 16",
+  "resource": "Gold",
+  "cost": 1600000,
+  "days": 0.6667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   347
+  ]
+ },
+ {
+  "id": 349,
+  "beforeTH": 18,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 5",
+  "resource": "Gold",
+  "cost": 70000,
+  "days": 0.0625,
+  "include": true,
+  "notes": "",
+  "requires": [
+   340
+  ]
+ },
+ {
+  "id": 350,
+  "beforeTH": 18,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 6",
+  "resource": "Gold",
+  "cost": 80000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "",
+  "requires": [
+   349
+  ]
+ },
+ {
+  "id": 351,
+  "beforeTH": 18,
+  "availTH": 6,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 7",
+  "resource": "Gold",
+  "cost": 150000,
+  "days": 0.125,
+  "include": true,
+  "notes": "",
+  "requires": [
+   350
+  ]
+ },
+ {
+  "id": 352,
+  "beforeTH": 18,
+  "availTH": 7,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 8",
+  "resource": "Gold",
+  "cost": 200000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   351
+  ]
+ },
+ {
+  "id": 353,
+  "beforeTH": 18,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 9",
+  "resource": "Gold",
+  "cost": 400000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "",
+  "requires": [
+   352
+  ]
+ },
+ {
+  "id": 354,
+  "beforeTH": 18,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 17",
+  "resource": "Gold",
+  "cost": 1800000,
+  "days": 0.8333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   348
+  ]
+ },
+ {
+  "id": 355,
+  "beforeTH": 18,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 10",
+  "resource": "Gold",
+  "cost": 460000,
+  "days": 0.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   353
+  ]
+ },
+ {
+  "id": 356,
+  "beforeTH": 18,
+  "availTH": 9,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 11",
+  "resource": "Gold",
+  "cost": 600000,
+  "days": 0.2917,
+  "include": true,
+  "notes": "",
+  "requires": [
+   355
+  ]
+ },
+ {
+  "id": 357,
+  "beforeTH": 18,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 12",
+  "resource": "Gold",
+  "cost": 700000,
+  "days": 0.3333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   356
+  ]
+ },
+ {
+  "id": 358,
+  "beforeTH": 18,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 18",
+  "resource": "Gold",
+  "cost": 2000000,
+  "days": 1,
+  "include": true,
+  "notes": "",
+  "requires": [
+   354
+  ]
+ },
+ {
+  "id": 359,
+  "beforeTH": 18,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 13",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.4167,
+  "include": true,
+  "notes": "",
+  "requires": [
+   357
+  ]
+ },
+ {
+  "id": 360,
+  "beforeTH": 18,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 14",
+  "resource": "Gold",
+  "cost": 1100000,
+  "days": 0.4583,
+  "include": true,
+  "notes": "",
+  "requires": [
+   359
+  ]
+ },
+ {
+  "id": 361,
+  "beforeTH": 18,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 15",
+  "resource": "Gold",
+  "cost": 1300000,
+  "days": 0.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   360
+  ]
+ },
+ {
+  "id": 362,
+  "beforeTH": 18,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 19",
+  "resource": "Gold",
+  "cost": 2200000,
+  "days": 1.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   358
+  ]
+ },
+ {
+  "id": 363,
+  "beforeTH": 18,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 16",
+  "resource": "Gold",
+  "cost": 1600000,
+  "days": 0.6667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   361
+  ]
+ },
+ {
+  "id": 364,
+  "beforeTH": 18,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 17",
+  "resource": "Gold",
+  "cost": 1800000,
+  "days": 0.8333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   363
+  ]
+ },
+ {
+  "id": 365,
+  "beforeTH": 18,
+  "availTH": 14,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 20",
+  "resource": "Gold",
+  "cost": 3000000,
+  "days": 1.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   362
+  ]
+ },
+ {
+  "id": 366,
+  "beforeTH": 18,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 18",
+  "resource": "Gold",
+  "cost": 2000000,
+  "days": 1,
+  "include": true,
+  "notes": "",
+  "requires": [
+   364
+  ]
+ },
+ {
+  "id": 367,
+  "beforeTH": 18,
+  "availTH": 17,
+  "category": "Inferno Artillery",
+  "name": "Inferno Artillery -> 3",
+  "resource": "Gold",
+  "cost": 12000000,
+  "days": 7,
+  "include": true,
+  "notes": "",
+  "requires": [
+   346
+  ]
+ },
+ {
+  "id": 368,
+  "beforeTH": 18,
+  "availTH": 15,
+  "category": "Merge prep",
+  "name": "Archer Tower #5 -> 21",
+  "resource": "Gold",
+  "cost": 4000000,
+  "days": 2,
+  "include": true,
+  "notes": "",
+  "requires": [
+   365
+  ]
+ },
+ {
+  "id": 369,
+  "beforeTH": 18,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 19",
+  "resource": "Gold",
+  "cost": 2200000,
+  "days": 1.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   366
+  ]
+ },
+ {
+  "id": 370,
+  "beforeTH": 18,
+  "availTH": 14,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 20",
+  "resource": "Gold",
+  "cost": 3000000,
+  "days": 1.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   369
+  ]
+ },
+ {
+  "id": 371,
+  "beforeTH": 18,
+  "availTH": 17,
+  "category": "Place new building",
+  "name": "Archer Tower (new)",
+  "resource": "Gold",
+  "cost": 1000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "Build time estimated (short level-1 build, not published on pages checked)",
+  "requires": []
+ },
+ {
+  "id": 372,
+  "beforeTH": 18,
+  "availTH": 2,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 2",
+  "resource": "Gold",
+  "cost": 2000,
+  "days": 0.0014,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 373,
+  "beforeTH": 18,
+  "availTH": 3,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 3",
+  "resource": "Gold",
+  "cost": 5000,
+  "days": 0.0139,
+  "include": true,
+  "notes": "",
+  "requires": [
+   372
+  ]
+ },
+ {
+  "id": 374,
+  "beforeTH": 18,
+  "availTH": 4,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 4",
+  "resource": "Gold",
+  "cost": 20000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "",
+  "requires": [
+   373
+  ]
+ },
+ {
+  "id": 375,
+  "beforeTH": 18,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 5",
+  "resource": "Gold",
+  "cost": 70000,
+  "days": 0.0625,
+  "include": true,
+  "notes": "",
+  "requires": [
+   374
+  ]
+ },
+ {
+  "id": 376,
+  "beforeTH": 18,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 6",
+  "resource": "Gold",
+  "cost": 80000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "",
+  "requires": [
+   375
+  ]
+ },
+ {
+  "id": 377,
+  "beforeTH": 18,
+  "availTH": 6,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 7",
+  "resource": "Gold",
+  "cost": 150000,
+  "days": 0.125,
+  "include": true,
+  "notes": "",
+  "requires": [
+   376
+  ]
+ },
+ {
+  "id": 378,
+  "beforeTH": 18,
+  "availTH": 7,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 8",
+  "resource": "Gold",
+  "cost": 200000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   377
+  ]
+ },
+ {
+  "id": 379,
+  "beforeTH": 18,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 9",
+  "resource": "Gold",
+  "cost": 400000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "",
+  "requires": [
+   378
+  ]
+ },
+ {
+  "id": 380,
+  "beforeTH": 18,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 10",
+  "resource": "Gold",
+  "cost": 460000,
+  "days": 0.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   379
+  ]
+ },
+ {
+  "id": 381,
+  "beforeTH": 18,
+  "availTH": 15,
+  "category": "Merge prep",
+  "name": "Archer Tower #6 -> 21",
+  "resource": "Gold",
+  "cost": 4000000,
+  "days": 2,
+  "include": true,
+  "notes": "",
+  "requires": [
+   370
+  ]
+ },
+ {
+  "id": 382,
+  "beforeTH": 18,
+  "availTH": 9,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 11",
+  "resource": "Gold",
+  "cost": 600000,
+  "days": 0.2917,
+  "include": true,
+  "notes": "",
+  "requires": [
+   380
+  ]
+ },
+ {
+  "id": 383,
+  "beforeTH": 18,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 12",
+  "resource": "Gold",
+  "cost": 700000,
+  "days": 0.3333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   382
+  ]
+ },
+ {
+  "id": 384,
+  "beforeTH": 18,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 13",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.4167,
+  "include": true,
+  "notes": "",
+  "requires": [
+   383
+  ]
+ },
+ {
+  "id": 385,
+  "beforeTH": 18,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 14",
+  "resource": "Gold",
+  "cost": 1100000,
+  "days": 0.4583,
+  "include": true,
+  "notes": "",
+  "requires": [
+   384
+  ]
+ },
+ {
+  "id": 386,
+  "beforeTH": 18,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 15",
+  "resource": "Gold",
+  "cost": 1300000,
+  "days": 0.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   385
+  ]
+ },
+ {
+  "id": 387,
+  "beforeTH": 18,
+  "availTH": 17,
+  "category": "Merge",
+  "name": "Multi-Archer Tower #3 (merge)",
+  "resource": "Gold",
+  "cost": 12000000,
+  "days": 7,
+  "include": true,
+  "notes": "",
+  "requires": [
+   368,
+   381
+  ]
+ },
+ {
+  "id": 388,
+  "beforeTH": 18,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 16",
+  "resource": "Gold",
+  "cost": 1600000,
+  "days": 0.6667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   386
+  ]
+ },
+ {
+  "id": 389,
+  "beforeTH": 18,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 17",
+  "resource": "Gold",
+  "cost": 1800000,
+  "days": 0.8333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   388
+  ]
+ },
+ {
+  "id": 390,
+  "beforeTH": 18,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 18",
+  "resource": "Gold",
+  "cost": 2000000,
+  "days": 1,
+  "include": true,
+  "notes": "",
+  "requires": [
+   389
+  ]
+ },
+ {
+  "id": 391,
+  "beforeTH": 18,
+  "availTH": 17,
+  "category": "Inferno Artillery",
+  "name": "Inferno Artillery -> 4",
+  "resource": "Gold",
+  "cost": 14000000,
+  "days": 8,
+  "include": true,
+  "notes": "",
+  "requires": [
+   367
+  ]
+ },
+ {
+  "id": 392,
+  "beforeTH": 18,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 19",
+  "resource": "Gold",
+  "cost": 2200000,
+  "days": 1.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   390
+  ]
+ },
+ {
+  "id": 393,
+  "beforeTH": 18,
+  "availTH": 14,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 20",
+  "resource": "Gold",
+  "cost": 3000000,
+  "days": 1.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   392
+  ]
+ },
+ {
+  "id": 394,
+  "beforeTH": 18,
+  "availTH": 15,
+  "category": "Merge prep",
+  "name": "Archer Tower #7 -> 21",
+  "resource": "Gold",
+  "cost": 4000000,
+  "days": 2,
+  "include": true,
+  "notes": "",
+  "requires": [
+   393
+  ]
+ },
+ {
+  "id": 395,
+  "beforeTH": 18,
+  "availTH": 1,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 2",
+  "resource": "Gold",
+  "cost": 1000,
+  "days": 0.0003,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 396,
+  "beforeTH": 18,
+  "availTH": 2,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 3",
+  "resource": "Gold",
+  "cost": 4000,
+  "days": 0.0014,
+  "include": true,
+  "notes": "",
+  "requires": [
+   395
+  ]
+ },
+ {
+  "id": 397,
+  "beforeTH": 18,
+  "availTH": 3,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 4",
+  "resource": "Gold",
+  "cost": 16000,
+  "days": 0.0139,
+  "include": true,
+  "notes": "",
+  "requires": [
+   396
+  ]
+ },
+ {
+  "id": 398,
+  "beforeTH": 18,
+  "availTH": 4,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 5",
+  "resource": "Gold",
+  "cost": 50000,
+  "days": 0.0208,
+  "include": true,
+  "notes": "",
+  "requires": [
+   397
+  ]
+ },
+ {
+  "id": 399,
+  "beforeTH": 18,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 6",
+  "resource": "Gold",
+  "cost": 60000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "",
+  "requires": [
+   398
+  ]
+ },
+ {
+  "id": 400,
+  "beforeTH": 18,
+  "availTH": 6,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 7",
+  "resource": "Gold",
+  "cost": 100000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "",
+  "requires": [
+   399
+  ]
+ },
+ {
+  "id": 401,
+  "beforeTH": 18,
+  "availTH": 7,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 8",
+  "resource": "Gold",
+  "cost": 160000,
+  "days": 0.125,
+  "include": true,
+  "notes": "",
+  "requires": [
+   400
+  ]
+ },
+ {
+  "id": 402,
+  "beforeTH": 18,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 9",
+  "resource": "Gold",
+  "cost": 250000,
+  "days": 0.1458,
+  "include": true,
+  "notes": "",
+  "requires": [
+   401
+  ]
+ },
+ {
+  "id": 403,
+  "beforeTH": 18,
+  "availTH": 1,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 2",
+  "resource": "Gold",
+  "cost": 1000,
+  "days": 0.0003,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 404,
+  "beforeTH": 18,
+  "availTH": 2,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 3",
+  "resource": "Gold",
+  "cost": 4000,
+  "days": 0.0014,
+  "include": true,
+  "notes": "",
+  "requires": [
+   403
+  ]
+ },
+ {
+  "id": 405,
+  "beforeTH": 18,
+  "availTH": 3,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 4",
+  "resource": "Gold",
+  "cost": 16000,
+  "days": 0.0139,
+  "include": true,
+  "notes": "",
+  "requires": [
+   404
+  ]
+ },
+ {
+  "id": 406,
+  "beforeTH": 18,
+  "availTH": 4,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 5",
+  "resource": "Gold",
+  "cost": 50000,
+  "days": 0.0208,
+  "include": true,
+  "notes": "",
+  "requires": [
+   405
+  ]
+ },
+ {
+  "id": 407,
+  "beforeTH": 18,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 6",
+  "resource": "Gold",
+  "cost": 60000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "",
+  "requires": [
+   406
+  ]
+ },
+ {
+  "id": 408,
+  "beforeTH": 18,
+  "availTH": 6,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 7",
+  "resource": "Gold",
+  "cost": 100000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "",
+  "requires": [
+   407
+  ]
+ },
+ {
+  "id": 409,
+  "beforeTH": 18,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 10",
+  "resource": "Gold",
+  "cost": 330000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   402
+  ]
+ },
+ {
+  "id": 410,
+  "beforeTH": 18,
+  "availTH": 7,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 8",
+  "resource": "Gold",
+  "cost": 160000,
+  "days": 0.125,
+  "include": true,
+  "notes": "",
+  "requires": [
+   408
+  ]
+ },
+ {
+  "id": 411,
+  "beforeTH": 18,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 9",
+  "resource": "Gold",
+  "cost": 250000,
+  "days": 0.1458,
+  "include": true,
+  "notes": "",
+  "requires": [
+   410
+  ]
+ },
+ {
+  "id": 412,
+  "beforeTH": 18,
+  "availTH": 9,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 11",
+  "resource": "Gold",
+  "cost": 500000,
+  "days": 0.1875,
+  "include": true,
+  "notes": "",
+  "requires": [
+   409
+  ]
+ },
+ {
+  "id": 413,
+  "beforeTH": 18,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 10",
+  "resource": "Gold",
+  "cost": 330000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   411
+  ]
+ },
+ {
+  "id": 414,
+  "beforeTH": 18,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 12",
+  "resource": "Gold",
+  "cost": 600000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "",
+  "requires": [
+   412
+  ]
+ },
+ {
+  "id": 415,
+  "beforeTH": 18,
+  "availTH": 9,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 11",
+  "resource": "Gold",
+  "cost": 500000,
+  "days": 0.1875,
+  "include": true,
+  "notes": "",
+  "requires": [
+   413
+  ]
+ },
+ {
+  "id": 416,
+  "beforeTH": 18,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 13",
+  "resource": "Gold",
+  "cost": 660000,
+  "days": 0.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   414
+  ]
+ },
+ {
+  "id": 417,
+  "beforeTH": 18,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 12",
+  "resource": "Gold",
+  "cost": 600000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "",
+  "requires": [
+   415
+  ]
+ },
+ {
+  "id": 418,
+  "beforeTH": 18,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 14",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.3333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   416
+  ]
+ },
+ {
+  "id": 419,
+  "beforeTH": 18,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 13",
+  "resource": "Gold",
+  "cost": 660000,
+  "days": 0.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   417
+  ]
+ },
+ {
+  "id": 420,
+  "beforeTH": 18,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 14",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.3333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   419
+  ]
+ },
+ {
+  "id": 421,
+  "beforeTH": 18,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 15",
+  "resource": "Gold",
+  "cost": 1200000,
+  "days": 0.4167,
+  "include": true,
+  "notes": "",
+  "requires": [
+   418
+  ]
+ },
+ {
+  "id": 422,
+  "beforeTH": 18,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 15",
+  "resource": "Gold",
+  "cost": 1200000,
+  "days": 0.4167,
+  "include": true,
+  "notes": "",
+  "requires": [
+   420
+  ]
+ },
+ {
+  "id": 423,
+  "beforeTH": 18,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 16",
+  "resource": "Gold",
+  "cost": 1300000,
+  "days": 0.4583,
+  "include": true,
+  "notes": "",
+  "requires": [
+   421
+  ]
+ },
+ {
+  "id": 424,
+  "beforeTH": 18,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 16",
+  "resource": "Gold",
+  "cost": 1300000,
+  "days": 0.4583,
+  "include": true,
+  "notes": "",
+  "requires": [
+   422
+  ]
+ },
+ {
+  "id": 425,
+  "beforeTH": 18,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 17",
+  "resource": "Gold",
+  "cost": 1500000,
+  "days": 0.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   423
+  ]
+ },
+ {
+  "id": 426,
+  "beforeTH": 18,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 17",
+  "resource": "Gold",
+  "cost": 1500000,
+  "days": 0.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   424
+  ]
+ },
+ {
+  "id": 427,
+  "beforeTH": 18,
+  "availTH": 17,
+  "category": "Inferno Artillery",
+  "name": "Inferno Artillery -> 5",
+  "resource": "Gold",
+  "cost": 18000000,
+  "days": 10,
+  "include": true,
+  "notes": "",
+  "requires": [
+   391
+  ]
+ },
+ {
+  "id": 428,
+  "beforeTH": 18,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 18",
+  "resource": "Gold",
+  "cost": 1800000,
+  "days": 0.6667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   425
+  ]
+ },
+ {
+  "id": 429,
+  "beforeTH": 18,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 18",
+  "resource": "Gold",
+  "cost": 1800000,
+  "days": 0.6667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   426
+  ]
+ },
+ {
+  "id": 430,
+  "beforeTH": 18,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 19",
+  "resource": "Gold",
+  "cost": 2000000,
+  "days": 0.8333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   428
+  ]
+ },
+ {
+  "id": 431,
+  "beforeTH": 18,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 19",
+  "resource": "Gold",
+  "cost": 2000000,
+  "days": 0.8333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   429
+  ]
+ },
+ {
+  "id": 432,
+  "beforeTH": 18,
+  "availTH": 14,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 20",
+  "resource": "Gold",
+  "cost": 2600000,
+  "days": 1,
+  "include": true,
+  "notes": "",
+  "requires": [
+   430
+  ]
+ },
+ {
+  "id": 433,
+  "beforeTH": 18,
+  "availTH": 14,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 20",
+  "resource": "Gold",
+  "cost": 2600000,
+  "days": 1,
+  "include": true,
+  "notes": "",
+  "requires": [
+   431
+  ]
+ },
+ {
+  "id": 434,
+  "beforeTH": 18,
+  "availTH": 15,
+  "category": "Merge prep",
+  "name": "Cannon #5 -> 21",
+  "resource": "Gold",
+  "cost": 3000000,
+  "days": 1.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   432
+  ]
+ },
+ {
+  "id": 435,
+  "beforeTH": 18,
+  "availTH": 15,
+  "category": "Merge prep",
+  "name": "Cannon #6 -> 21",
+  "resource": "Gold",
+  "cost": 3000000,
+  "days": 1.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   433
+  ]
+ },
+ {
+  "id": 436,
+  "beforeTH": 18,
+  "availTH": 1,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 2",
+  "resource": "Gold",
+  "cost": 1000,
+  "days": 0.0003,
+  "include": true,
+  "notes": "",
+  "requires": []
+ },
+ {
+  "id": 437,
+  "beforeTH": 18,
+  "availTH": 2,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 3",
+  "resource": "Gold",
+  "cost": 4000,
+  "days": 0.0014,
+  "include": true,
+  "notes": "",
+  "requires": [
+   436
+  ]
+ },
+ {
+  "id": 438,
+  "beforeTH": 18,
+  "availTH": 3,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 4",
+  "resource": "Gold",
+  "cost": 16000,
+  "days": 0.0139,
+  "include": true,
+  "notes": "",
+  "requires": [
+   437
+  ]
+ },
+ {
+  "id": 439,
+  "beforeTH": 18,
+  "availTH": 4,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 5",
+  "resource": "Gold",
+  "cost": 50000,
+  "days": 0.0208,
+  "include": true,
+  "notes": "",
+  "requires": [
+   438
+  ]
+ },
+ {
+  "id": 440,
+  "beforeTH": 18,
+  "availTH": 5,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 6",
+  "resource": "Gold",
+  "cost": 60000,
+  "days": 0.0417,
+  "include": true,
+  "notes": "",
+  "requires": [
+   439
+  ]
+ },
+ {
+  "id": 441,
+  "beforeTH": 18,
+  "availTH": 6,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 7",
+  "resource": "Gold",
+  "cost": 100000,
+  "days": 0.0833,
+  "include": true,
+  "notes": "",
+  "requires": [
+   440
+  ]
+ },
+ {
+  "id": 442,
+  "beforeTH": 18,
+  "availTH": 7,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 8",
+  "resource": "Gold",
+  "cost": 160000,
+  "days": 0.125,
+  "include": true,
+  "notes": "",
+  "requires": [
+   441
+  ]
+ },
+ {
+  "id": 443,
+  "beforeTH": 18,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 9",
+  "resource": "Gold",
+  "cost": 250000,
+  "days": 0.1458,
+  "include": true,
+  "notes": "",
+  "requires": [
+   442
+  ]
+ },
+ {
+  "id": 444,
+  "beforeTH": 18,
+  "availTH": 17,
+  "category": "Merge",
+  "name": "Ricochet Cannon #3 (merge)",
+  "resource": "Gold",
+  "cost": 12000000,
+  "days": 7,
+  "include": true,
+  "notes": "",
+  "requires": [
+   434,
+   435
+  ]
+ },
+ {
+  "id": 445,
+  "beforeTH": 18,
+  "availTH": 8,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 10",
+  "resource": "Gold",
+  "cost": 330000,
+  "days": 0.1667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   443
+  ]
+ },
+ {
+  "id": 446,
+  "beforeTH": 18,
+  "availTH": 9,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 11",
+  "resource": "Gold",
+  "cost": 500000,
+  "days": 0.1875,
+  "include": true,
+  "notes": "",
+  "requires": [
+   445
+  ]
+ },
+ {
+  "id": 447,
+  "beforeTH": 18,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 12",
+  "resource": "Gold",
+  "cost": 600000,
+  "days": 0.2083,
+  "include": true,
+  "notes": "",
+  "requires": [
+   446
+  ]
+ },
+ {
+  "id": 448,
+  "beforeTH": 18,
+  "availTH": 10,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 13",
+  "resource": "Gold",
+  "cost": 660000,
+  "days": 0.25,
+  "include": true,
+  "notes": "",
+  "requires": [
+   447
+  ]
+ },
+ {
+  "id": 449,
+  "beforeTH": 18,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 14",
+  "resource": "Gold",
+  "cost": 1000000,
+  "days": 0.3333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   448
+  ]
+ },
+ {
+  "id": 450,
+  "beforeTH": 18,
+  "availTH": 11,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 15",
+  "resource": "Gold",
+  "cost": 1200000,
+  "days": 0.4167,
+  "include": true,
+  "notes": "",
+  "requires": [
+   449
+  ]
+ },
+ {
+  "id": 451,
+  "beforeTH": 18,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 16",
+  "resource": "Gold",
+  "cost": 1300000,
+  "days": 0.4583,
+  "include": true,
+  "notes": "",
+  "requires": [
+   450
+  ]
+ },
+ {
+  "id": 452,
+  "beforeTH": 18,
+  "availTH": 12,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 17",
+  "resource": "Gold",
+  "cost": 1500000,
+  "days": 0.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   451
+  ]
+ },
+ {
+  "id": 453,
+  "beforeTH": 18,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 18",
+  "resource": "Gold",
+  "cost": 1800000,
+  "days": 0.6667,
+  "include": true,
+  "notes": "",
+  "requires": [
+   452
+  ]
+ },
+ {
+  "id": 454,
+  "beforeTH": 18,
+  "availTH": 13,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 19",
+  "resource": "Gold",
+  "cost": 2000000,
+  "days": 0.8333,
+  "include": true,
+  "notes": "",
+  "requires": [
+   453
+  ]
+ },
+ {
+  "id": 455,
+  "beforeTH": 18,
+  "availTH": 14,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 20",
+  "resource": "Gold",
+  "cost": 2600000,
+  "days": 1,
+  "include": true,
+  "notes": "",
+  "requires": [
+   454
+  ]
+ },
+ {
+  "id": 456,
+  "beforeTH": 18,
+  "availTH": 15,
+  "category": "Merge prep",
+  "name": "Cannon #7 -> 21",
+  "resource": "Gold",
+  "cost": 3000000,
+  "days": 1.5,
+  "include": true,
+  "notes": "",
+  "requires": [
+   455
+  ]
+ },
+ {
+  "id": 457,
+  "beforeTH": 18,
+  "availTH": 17,
+  "category": "Merge",
+  "name": "Multi-Gear Tower (merge)",
+  "resource": "Gold",
+  "cost": 17000000,
+  "days": 8,
+  "include": true,
+  "notes": "",
+  "requires": [
+   306,
+   305
+  ]
+ },
+ {
+  "id": 458,
+  "beforeTH": 18,
+  "availTH": 17,
+  "category": "Town Hall",
+  "name": "Town Hall -> 18",
+  "resource": "Gold",
+  "cost": 25000000,
+  "days": 12,
+  "include": true,
+  "notes": "",
+  "requires": [
+   304,
+   305,
+   306,
+   307,
+   308,
+   309,
+   310,
+   311,
+   312,
+   313,
+   314,
+   315,
+   316,
+   317,
+   318,
+   319,
+   320,
+   321,
+   322,
+   323,
+   324,
+   325,
+   326,
+   327,
+   328,
+   329,
+   330,
+   331,
+   332,
+   333,
+   334,
+   335,
+   336,
+   337,
+   338,
+   339,
+   340,
+   341,
+   342,
+   343,
+   344,
+   345,
+   346,
+   347,
+   348,
+   349,
+   350,
+   351,
+   352,
+   353,
+   354,
+   355,
+   356,
+   357,
+   358,
+   359,
+   360,
+   361,
+   362,
+   363,
+   364,
+   365,
+   366,
+   367,
+   368,
+   369,
+   370,
+   371,
+   372,
+   373,
+   374,
+   375,
+   376,
+   377,
+   378,
+   379,
+   380,
+   381,
+   382,
+   383,
+   384,
+   385,
+   386,
+   387,
+   388,
+   389,
+   390,
+   391,
+   392,
+   393,
+   394,
+   395,
+   396,
+   397,
+   398,
+   399,
+   400,
+   401,
+   402,
+   403,
+   404,
+   405,
+   406,
+   407,
+   408,
+   409,
+   410,
+   411,
+   412,
+   413,
+   414,
+   415,
+   416,
+   417,
+   418,
+   419,
+   420,
+   421,
+   422,
+   423,
+   424,
+   425,
+   426,
+   427,
+   428,
+   429,
+   430,
+   431,
+   432,
+   433,
+   434,
+   435,
+   436,
+   437,
+   438,
+   439,
+   440,
+   441,
+   442,
+   443,
+   444,
+   445,
+   446,
+   447,
+   448,
+   449,
+   450,
+   451,
+   452,
+   453,
+   454,
+   455,
+   456,
+   457
+  ]
+ }
+]

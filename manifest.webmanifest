@@ -1,0 +1,16 @@
+{
+  "name": "Clash Rush Tracker",
+  "short_name": "Rush Tracker",
+  "description": "Track your TH10 to TH18 rush: what to upgrade next and what to give spare builders.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#14171f",
+  "theme_color": "#14171f",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
