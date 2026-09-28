@@ -1,5 +1,5 @@
 // Offline support: serve the app from cache, refresh the cache in the background.
-const CACHE = 'rush-tracker-v2';
+const CACHE = 'rush-tracker-v3';
 const ASSETS = [
   './',
   'index.html',
@@ -26,13 +26,26 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET' || new URL(e.request.url).origin !== location.origin) return;
-  e.respondWith(
-    caches.open(CACHE).then(async cache => {
-      const cached = await cache.match(e.request, { ignoreSearch: true });
-      const network = fetch(e.request)
-        .then(res => { if (res.ok) cache.put(e.request, res.clone()); return res; })
-        .catch(() => cached);
-      return cached || network;
-    })
-  );
+  const network = fetch(e.request).then(async res => {
+    if (res.ok) {
+      const cache = await caches.open(CACHE);
+      await cache.put(e.request, res.clone());
+    }
+    return res;
+  });
+  // Keep the worker alive until the background refresh is stored.
+  e.waitUntil(network.catch(() => {}));
+  e.respondWith((async () => {
+    const cached = await caches.match(e.request, { ignoreSearch: true });
+    if (cached) return cached;
+    try {
+      return await network;
+    } catch (err) {
+      if (e.request.mode === 'navigate') {
+        const shell = await caches.match('index.html');
+        if (shell) return shell;
+      }
+      return new Response('Offline', { status: 503, statusText: 'Offline' });
+    }
+  })());
 });

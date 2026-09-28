@@ -12,6 +12,7 @@ const TAIL = new Map();          // longest chain of work (days) starting at an 
 let state = loadState();
 const ui = {
   tab: 'next',
+  prevTab: 'next',
   spareLimit: 8,
   showBlocked: false,
   filters: { stage: 'all', cat: 'all', q: '', hideDone: false },
@@ -26,9 +27,34 @@ function defaultState() {
 function loadState() {
   try {
     const raw = localStorage.getItem(STORE_KEY);
-    if (raw) return Object.assign(defaultState(), JSON.parse(raw));
+    if (raw) return sanitizeState(JSON.parse(raw));
   } catch (e) { /* storage unavailable */ }
   return defaultState();
+}
+
+function isObj(v) { return !!v && typeof v === 'object' && !Array.isArray(v); }
+
+// Accepts saved or imported state and keeps only well-formed fields.
+// Upgrade ids are checked against the data later, in init().
+function sanitizeState(data) {
+  const next = defaultState();
+  if (!isObj(data)) return next;
+  for (const key of ['done', 'include']) {
+    for (const [k, v] of Object.entries(isObj(data[key]) ? data[key] : {})) {
+      if (typeof v === 'boolean') next[key][k] = v;
+    }
+  }
+  const taken = new Set();
+  for (const [k, v] of Object.entries(isObj(data.running) ? data.running : {})) {
+    if (!isObj(v) || !Number.isFinite(v.endsAt) || !Number.isInteger(v.builder)) continue;
+    if (v.builder < 0 || v.builder >= MAX_BUILDERS || taken.has(v.builder)) continue;
+    taken.add(v.builder);
+    next.running[k] = { builder: v.builder, endsAt: v.endsAt, startedAt: Number.isFinite(v.startedAt) ? v.startedAt : Date.now() };
+  }
+  const b = parseInt(data.builders, 10);
+  next.builders = b >= 1 && b <= MAX_BUILDERS ? b : 3;
+  next.theme = ['system', 'dark', 'light'].includes(data.theme) ? data.theme : 'system';
+  return next;
 }
 
 function save() {
@@ -75,7 +101,8 @@ function builderSlots() {
 function freeBuilders() {
   const out = [];
   const used = new Set(Object.values(state.running).map(r => r.builder));
-  for (let i = 0; i < state.builders; i++) if (!used.has(i)) out.push(i);
+  const spare = Math.max(0, state.builders - used.size);
+  for (let i = 0; out.length < spare; i++) if (!used.has(i)) out.push(i);
   return out;
 }
 
@@ -171,17 +198,20 @@ async function setTimeLeft(id) {
 }
 
 function parseDuration(s) {
-  const re = /(\d+(?:\.\d+)?)\s*([dhms])/gi;
-  let total = 0, m, found = false;
-  while ((m = re.exec(s))) {
-    found = true;
-    total += parseFloat(m[1]) * { d: DAY_MS, h: 3600000, m: 60000, s: 1000 }[m[2].toLowerCase()];
+  const text = s.trim().toLowerCase();
+  if (!/^(\d+(\.\d+)?\s*[dhms]\s*)+$/.test(text)) return null;
+  let total = 0;
+  for (const m of text.matchAll(/(\d+(?:\.\d+)?)\s*([dhms])/g)) {
+    total += parseFloat(m[1]) * { d: DAY_MS, h: 3600000, m: 60000, s: 1000 }[m[2]];
   }
-  return found ? total : null;
+  return total;
 }
 
 function setStartingPoint(th) {
-  for (const it of DATA) if (it.beforeTH <= th) { state.done[it.id] = true; delete state.running[it.id]; }
+  for (const it of DATA) {
+    if (it.beforeTH <= th) { state.done[it.id] = true; delete state.running[it.id]; }
+    else delete state.done[it.id];
+  }
 }
 
 /* ---------------- Formatting ---------------- */
@@ -240,7 +270,7 @@ function itemRow(it, { action = 'start', th, top = false, showStage = false, fre
 
   let lead = '', trail = '';
   if (action === 'check') {
-    lead = `<button class="check ${done ? 'on' : ''}" data-action="toggle-done" data-id="${it.id}" aria-label="Mark done">${done ? CHECK_SVG : ''}</button>`;
+    lead = `<button class="check ${done ? 'on' : ''}" data-action="toggle-done" data-id="${it.id}" aria-label="${esc(it.name)} done" aria-pressed="${done}">${done ? CHECK_SVG : ''}</button>`;
     trail = `<button class="inc-btn" data-action="toggle-include" data-id="${it.id}">${included ? 'Skip' : 'Skipped'}</button>`;
   } else if (running) {
     trail = `<span class="tag">Builder ${state.running[it.id].builder + 1}</span>`;
@@ -314,7 +344,7 @@ function renderNext() {
   // Spare builder ideas: later-stage work that's already unlocked.
   const spareRest = spare.filter(it => !pickIds.has(it.id));
   html += `<h2>Spare builder upgrades <span class="count">${spareRest.length}</span></h2>
-    <p class="muted small" style="margin:-4px 0 8px">Unlocked now, needed for later Town Halls. Longest chains first so they don't hold you up later.</p>`;
+    <p class="muted small" style="margin:-4px 0 8px">Unlocked now, needed for later Town Halls. Soonest Town Hall first, then the longest chains, so they don't hold you up later.</p>`;
   if (!spareRest.length) {
     html += `<div class="card empty">No later-stage upgrades unlocked yet.</div>`;
   } else {
@@ -327,6 +357,7 @@ function renderNext() {
 function nextBuilderFreeText(free) {
   if (free.length) return '';
   const soonest = Math.min(...Object.values(state.running).map(r => r.endsAt));
+  if (soonest <= Date.now()) return '<span>A builder is ready to collect</span>';
   return `<span>Next free in <b data-ends="${soonest}"></b></span>`;
 }
 
@@ -394,7 +425,7 @@ function renderProgress() {
   let html = `<div class="card hero-card">
     <div class="big">${pct.toFixed(1)}% of the rush done</div>
     <div class="bar"><i style="width:${pct.toFixed(1)}%"></i></div>
-    <div class="row"><span>Town Hall ${th} of ${MAX_TH}</span><span>${fmtDays(daysLeft)} builder time left</span></div>
+    <div class="row"><span>Town Hall ${th} of ${MAX_TH}</span><span>${daysLeft > 0 ? fmtDays(daysLeft) + ' builder time left' : 'No builder time left'}</span></div>
   </div>
   <div class="stats">
     <div class="stat"><div class="k">Gold left</div><div class="v res Gold">${fmtNum(left.Gold)}</div></div>
@@ -466,7 +497,7 @@ function renderSettings() {
       </div>
     </div>
     <div class="field"><label for="startTH">Set my starting point</label>
-      <div class="muted small">Marks every upgrade needed up to that Town Hall as done. Fine-tune individual items in the All tab.</div>
+      <div class="muted small">Marks every upgrade needed up to that Town Hall as done and clears done marks for later stages. Fine-tune individual items in the All tab.</div>
       <div class="btn-row">
         <select id="startTH" style="flex:1">${Array.from({ length: MAX_TH - START_TH + 1 }, (_, i) => START_TH + i)
           .map(t => `<option value="${t}" ${t === th ? 'selected' : ''}>I'm at Town Hall ${t}</option>`).join('')}</select>
@@ -529,7 +560,11 @@ function render() {
   applyTheme();
   renderHeader();
   document.querySelectorAll('.view').forEach(v => { v.hidden = v.dataset.view !== ui.tab; });
-  document.querySelectorAll('.tabbar button').forEach(b => b.classList.toggle('active', b.dataset.tab === ui.tab));
+  document.querySelectorAll('.tabbar button').forEach(b => {
+    const on = b.dataset.tab === ui.tab;
+    b.classList.toggle('active', on);
+    if (on) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current');
+  });
   ({ next: renderNext, builders: renderBuilders, progress: renderProgress, all: renderAll, settings: renderSettings })[ui.tab]();
   tick();
 }
@@ -544,8 +579,9 @@ function tick() {
     el.textContent = left > 0 ? fmtCountdown(left) : (el.dataset.readyText || 'ready');
   });
   const ready = Object.values(state.running).filter(r => r.endsAt <= now).length;
-  if (lastReady !== -1 && ready !== lastReady) render();
+  const prev = lastReady;
   lastReady = ready;
+  if (prev !== -1 && ready !== prev) render();
 }
 
 let toastTimer;
@@ -569,25 +605,17 @@ function exportState() {
 function applyBackup(txt) {
   let data;
   try { data = JSON.parse(txt); } catch (e) { data = null; }
-  const isObj = v => v && typeof v === 'object' && !Array.isArray(v);
   if (!isObj(data) || !isObj(data.done)) { toast("That isn't a Rush Tracker backup"); return; }
-  const next = defaultState();
-  for (const key of ['done', 'include', 'running']) {
-    for (const [k, v] of Object.entries(isObj(data[key]) ? data[key] : {})) {
-      if (!BY_ID.has(+k)) continue;
-      if (key === 'running') {
-        if (isObj(v) && Number.isFinite(v.endsAt) && Number.isInteger(v.builder) && v.builder >= 0 && v.builder < MAX_BUILDERS) {
-          next.running[k] = { builder: v.builder, endsAt: v.endsAt, startedAt: Number.isFinite(v.startedAt) ? v.startedAt : Date.now() };
-        }
-      } else if (typeof v === 'boolean') next[key][k] = v;
-    }
-  }
-  const b = parseInt(data.builders, 10);
-  next.builders = b >= 1 && b <= MAX_BUILDERS ? b : 3;
-  next.theme = ['system', 'dark', 'light'].includes(data.theme) ? data.theme : 'system';
-  state = next;
+  state = pruneUnknownIds(sanitizeState(data));
   commit();
   toast('Backup restored');
+}
+
+function pruneUnknownIds(st) {
+  for (const key of ['done', 'include', 'running']) {
+    for (const k of Object.keys(st[key])) if (!BY_ID.has(+k)) delete st[key][k];
+  }
+  return st;
 }
 
 function importState(e) {
@@ -607,8 +635,10 @@ function copyBackup() {
 
 // In-page replacement for confirm()/prompt(), which some hosts block.
 function ask({ title, body = '', input = null, okText = 'OK', cancelText = 'Cancel', danger = false }) {
+  const wrap = document.getElementById('dialog');
+  if (!wrap.hidden) return Promise.resolve(null);
+  const opener = document.activeElement;
   return new Promise(resolve => {
-    const wrap = document.getElementById('dialog');
     const field = input == null ? ''
       : input.multiline
         ? `<textarea id="dlgInput" rows="6" spellcheck="false">${esc(input.value || '')}</textarea>`
@@ -631,6 +661,7 @@ function ask({ title, body = '', input = null, okText = 'OK', cancelText = 'Canc
       wrap.innerHTML = '';
       wrap.onclick = null;
       document.removeEventListener('keydown', onKey);
+      if (opener && opener.isConnected) opener.focus();
       resolve(val);
     };
     const onKey = e => {
@@ -680,7 +711,7 @@ async function onClick(e) {
     }
     case 'set-start': {
       const t = +document.getElementById('startTH').value;
-      if (!await ask({ title: `Set starting point to TH${t}?`, body: `Every upgrade needed up to Town Hall ${t} will be marked done.`, okText: 'Mark done' })) return;
+      if (!await ask({ title: `Set starting point to TH${t}?`, body: `Every upgrade needed up to Town Hall ${t} will be marked done, and later stages will be cleared.`, okText: 'Set TH${t}' })) return;
       setStartingPoint(t);
       toast(`Starting point set to TH${t}`);
       break;
@@ -697,7 +728,7 @@ async function onClick(e) {
       if (!await ask({ title: 'Erase all progress?', body: 'This clears every done mark, skipped item and builder timer.', okText: 'Erase', danger: true })) return;
       state = defaultState();
       break;
-    case 'close-settings': ui.tab = 'next'; break;
+    case 'close-settings': ui.tab = ui.prevTab; break;
     default: return;
   }
   commit();
@@ -714,7 +745,7 @@ async function init() {
   }
   DATA.forEach(it => BY_ID.set(it.id, it));
   // Drop timers/marks for ids that no longer exist after a data update.
-  for (const k of Object.keys(state.running)) if (!BY_ID.has(+k)) delete state.running[k];
+  pruneUnknownIds(state);
   computeTails();
 
   document.getElementById('main').addEventListener('click', onClick);
@@ -726,7 +757,8 @@ async function init() {
     window.scrollTo(0, 0);
   });
   document.getElementById('settingsBtn').addEventListener('click', () => {
-    ui.tab = ui.tab === 'settings' ? 'next' : 'settings';
+    if (ui.tab === 'settings') ui.tab = ui.prevTab;
+    else { ui.prevTab = ui.tab; ui.tab = 'settings'; }
     render();
     window.scrollTo(0, 0);
   });

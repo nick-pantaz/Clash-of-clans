@@ -26,7 +26,7 @@
     --border: #ddd8cc;
     --text: #1c1f27;
     --muted: #646b7a;
-    --accent: #d99414;
+    --accent: #a86a00;
     --accent-ink: #ffffff;
     --good: #1f9460;
   --good-ink: #ffffff;
@@ -46,7 +46,7 @@
   --border: #ddd8cc;
   --text: #1c1f27;
   --muted: #646b7a;
-  --accent: #d99414;
+  --accent: #a86a00;
   --accent-ink: #ffffff;
   --good: #1f9460;
   --good-ink: #ffffff;
@@ -142,7 +142,7 @@ h2 .count { color: var(--text); margin-left: 4px; }
 .tag.th { background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--accent); }
 
 .btn {
-  flex: none; border: 0; border-radius: 10px; padding: 0 14px; height: 40px; min-width: 64px;
+  flex: none; border: 0; border-radius: 10px; padding: 0 14px; height: 44px; min-width: 64px;
   background: var(--accent); color: var(--accent-ink); font-weight: 700; cursor: pointer;
 }
 .btn:disabled { background: var(--surface-2); color: var(--muted); cursor: not-allowed; }
@@ -153,7 +153,7 @@ h2 .count { color: var(--text); margin-left: 4px; }
 .btn-row { display: flex; gap: 8px; flex-wrap: wrap; }
 
 .check {
-  flex: none; width: 28px; height: 28px; border-radius: 8px; border: 2px solid var(--border);
+  flex: none; width: 36px; height: 36px; border-radius: 9px; border: 2px solid var(--border);
   display: grid; place-items: center; cursor: pointer; background: transparent; padding: 0;
 }
 .check.on { background: var(--good); border-color: var(--good); color: var(--good-ink); }
@@ -198,7 +198,7 @@ input[type=search], input[type=text], select {
 .stepper output { font-size: 20px; font-weight: 800; min-width: 24px; text-align: center; }
 .inc-btn {
   flex: none; border: 1px solid var(--border); background: transparent; color: var(--muted);
-  border-radius: 8px; font-size: 11px; font-weight: 700; padding: 4px 6px; cursor: pointer;
+  border-radius: 8px; font-size: 12px; font-weight: 700; padding: 0 10px; min-height: 36px; cursor: pointer;
 }
 .empty { text-align: center; color: var(--muted); padding: 22px 12px; }
 
