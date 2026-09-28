@@ -1,5 +1,5 @@
 // Offline support: serve the app from cache, refresh the cache in the background.
-const CACHE = 'rush-tracker-v1';
+const CACHE = 'rush-tracker-v2';
 const ASSETS = [
   './',
   'index.html',

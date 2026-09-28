@@ -20,7 +20,7 @@ const ui = {
 /* ---------------- State ---------------- */
 
 function defaultState() {
-  return { v: 1, done: {}, include: {}, running: {}, builders: 3, theme: 'dark' };
+  return { v: 1, done: {}, include: {}, running: {}, builders: 3, theme: 'system' };
 }
 
 function loadState() {
@@ -154,10 +154,15 @@ function finishUpgrade(id) {
   toast(after > before ? `Town Hall ${after} reached!` : `${it.name} done`);
 }
 
-function setTimeLeft(id) {
+async function setTimeLeft(id) {
   const r = state.running[id];
   const current = fmtCountdown(Math.max(0, r.endsAt - Date.now()), true);
-  const input = prompt('Time left on this upgrade (e.g. 2d 5h 30m)', current);
+  const input = await ask({
+    title: 'Time left',
+    body: `How long is left on ${BY_ID.get(id).name}? Copy it from the game, e.g. 2d 5h 30m.`,
+    input: { value: current },
+    okText: 'Save',
+  });
   if (input == null) return false;
   const ms = parseDuration(input);
   if (ms == null) { toast("Couldn't read that time. Try 2d 5h 30m"); return false; }
@@ -470,19 +475,20 @@ function renderSettings() {
     </div>
     <div class="field"><label>Theme</label>
       <div class="btn-row">
-        <button class="btn ${state.theme === 'dark' ? '' : 'ghost'}" data-action="theme" data-theme="dark">Dark</button>
-        <button class="btn ${state.theme === 'light' ? '' : 'ghost'}" data-action="theme" data-theme="light">Light</button>
+        ${['system', 'dark', 'light'].map(t => `<button class="btn ${state.theme === t ? '' : 'ghost'}" data-action="theme" data-theme="${t}">${t[0].toUpperCase() + t.slice(1)}</button>`).join('')}
       </div>
     </div>
   </div>
   <h2>Backup</h2>
   <div class="card">
-    <div class="muted small" style="margin-bottom:10px">Progress is saved on this device only. Export a backup to move it to another phone.</div>
+    <div class="muted small" style="margin-bottom:10px">Progress is saved on this device only. Copy a backup and paste it on another device to move it.</div>
     <div class="btn-row">
-      <button class="btn ghost" data-action="export">Export</button>
-      <label class="btn ghost" style="display:inline-grid;place-items:center">Import<input type="file" id="importFile" accept="application/json" hidden></label>
-      <button class="btn danger" data-action="reset">Reset everything</button>
+      <button class="btn ghost" data-action="copy-backup">Copy backup</button>
+      <button class="btn ghost" data-action="paste-backup">Paste backup</button>
+      <button class="btn ghost" data-action="export">Save file</button>
+      <label class="btn ghost file-btn">Open file<input type="file" id="importFile" accept="application/json,.json" hidden></label>
     </div>
+    <button class="btn danger block" style="margin-top:12px" data-action="reset">Reset everything</button>
   </div>
   <h2>About the data</h2>
   <div class="card small muted">
@@ -507,8 +513,20 @@ function renderHeader() {
   document.getElementById('readyDot').hidden = !anyReady;
 }
 
+let themeSetByApp = false;
+function applyTheme() {
+  const root = document.documentElement;
+  if (state.theme === 'dark' || state.theme === 'light') {
+    root.dataset.theme = state.theme;
+    themeSetByApp = true;
+  } else if (themeSetByApp) {
+    delete root.dataset.theme;
+    themeSetByApp = false;
+  }
+}
+
 function render() {
-  document.documentElement.dataset.theme = state.theme;
+  applyTheme();
   renderHeader();
   document.querySelectorAll('.view').forEach(v => { v.hidden = v.dataset.view !== ui.tab; });
   document.querySelectorAll('.tabbar button').forEach(b => b.classList.toggle('active', b.dataset.tab === ui.tab));
@@ -548,19 +566,87 @@ function exportState() {
   setTimeout(() => URL.revokeObjectURL(a.href), 1000);
 }
 
+function applyBackup(txt) {
+  let data;
+  try { data = JSON.parse(txt); } catch (e) { data = null; }
+  const isObj = v => v && typeof v === 'object' && !Array.isArray(v);
+  if (!isObj(data) || !isObj(data.done)) { toast("That isn't a Rush Tracker backup"); return; }
+  const next = defaultState();
+  for (const key of ['done', 'include', 'running']) {
+    for (const [k, v] of Object.entries(isObj(data[key]) ? data[key] : {})) {
+      if (!BY_ID.has(+k)) continue;
+      if (key === 'running') {
+        if (isObj(v) && Number.isFinite(v.endsAt) && Number.isInteger(v.builder) && v.builder >= 0 && v.builder < MAX_BUILDERS) {
+          next.running[k] = { builder: v.builder, endsAt: v.endsAt, startedAt: Number.isFinite(v.startedAt) ? v.startedAt : Date.now() };
+        }
+      } else if (typeof v === 'boolean') next[key][k] = v;
+    }
+  }
+  const b = parseInt(data.builders, 10);
+  next.builders = b >= 1 && b <= MAX_BUILDERS ? b : 3;
+  next.theme = ['system', 'dark', 'light'].includes(data.theme) ? data.theme : 'system';
+  state = next;
+  commit();
+  toast('Backup restored');
+}
+
 function importState(e) {
   const file = e.target.files[0];
   if (!file) return;
-  file.text().then(txt => {
-    const data = JSON.parse(txt);
-    if (typeof data !== 'object' || !data.done) throw new Error('bad file');
-    state = Object.assign(defaultState(), data);
-    commit();
-    toast('Backup imported');
-  }).catch(() => toast("That file isn't a Rush Tracker backup"));
+  file.text().then(applyBackup, () => toast("Couldn't read that file"));
+  e.target.value = '';
 }
 
-function onClick(e) {
+function copyBackup() {
+  const txt = JSON.stringify(state);
+  const fallback = () => ask({ title: 'Your backup', body: 'Select all of this text and copy it.', input: { value: txt, multiline: true }, okText: 'Close', cancelText: null });
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(txt).then(() => toast('Backup copied'), fallback);
+  } else fallback();
+}
+
+// In-page replacement for confirm()/prompt(), which some hosts block.
+function ask({ title, body = '', input = null, okText = 'OK', cancelText = 'Cancel', danger = false }) {
+  return new Promise(resolve => {
+    const wrap = document.getElementById('dialog');
+    const field = input == null ? ''
+      : input.multiline
+        ? `<textarea id="dlgInput" rows="6" spellcheck="false">${esc(input.value || '')}</textarea>`
+        : `<input type="text" id="dlgInput" value="${esc(input.value || '')}" autocomplete="off">`;
+    wrap.innerHTML = `<div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dlgTitle">
+        <div class="dlg-title" id="dlgTitle">${esc(title)}</div>
+        ${body ? `<div class="muted small">${esc(body)}</div>` : ''}
+        ${field}
+        <div class="btn-row dlg-actions">
+          ${cancelText ? `<button class="btn ghost" data-dlg="cancel">${esc(cancelText)}</button>` : ''}
+          <button class="btn ${danger ? 'danger-fill' : ''}" data-dlg="ok">${esc(okText)}</button>
+        </div>
+      </div>`;
+    wrap.hidden = false;
+    const inp = wrap.querySelector('#dlgInput');
+    (inp || wrap.querySelector('[data-dlg=ok]')).focus();
+    if (inp && !input.multiline) inp.select();
+    const close = val => {
+      wrap.hidden = true;
+      wrap.innerHTML = '';
+      wrap.onclick = null;
+      document.removeEventListener('keydown', onKey);
+      resolve(val);
+    };
+    const onKey = e => {
+      if (e.key === 'Escape') close(null);
+      else if (e.key === 'Enter' && inp && !input.multiline) close(inp.value);
+    };
+    document.addEventListener('keydown', onKey);
+    wrap.onclick = e => {
+      if (e.target === wrap) return close(null);
+      const b = e.target.closest('[data-dlg]');
+      if (b) close(b.dataset.dlg === 'ok' ? (inp ? inp.value : true) : null);
+    };
+  });
+}
+
+async function onClick(e) {
   const btn = e.target.closest('[data-action]');
   if (!btn) return;
   const id = btn.dataset.id ? +btn.dataset.id : null;
@@ -568,10 +654,10 @@ function onClick(e) {
     case 'start': startUpgrade(id); break;
     case 'finish': finishUpgrade(id); break;
     case 'cancel':
-      if (!confirm(`Cancel ${BY_ID.get(id).name}? It goes back to the to-do list.`)) return;
+      if (!await ask({ title: `Cancel ${BY_ID.get(id).name}?`, body: 'It goes back to the to-do list.', okText: 'Cancel upgrade', cancelText: 'Keep it', danger: true })) return;
       delete state.running[id];
       break;
-    case 'set-time': if (!setTimeLeft(id)) return; break;
+    case 'set-time': if (!await setTimeLeft(id)) return; break;
     case 'toggle-done':
       if (state.done[id]) delete state.done[id];
       else {
@@ -594,15 +680,21 @@ function onClick(e) {
     }
     case 'set-start': {
       const t = +document.getElementById('startTH').value;
-      if (!confirm(`Mark everything up to Town Hall ${t} as done?`)) return;
+      if (!await ask({ title: `Set starting point to TH${t}?`, body: `Every upgrade needed up to Town Hall ${t} will be marked done.`, okText: 'Mark done' })) return;
       setStartingPoint(t);
       toast(`Starting point set to TH${t}`);
       break;
     }
     case 'theme': state.theme = btn.dataset.theme; break;
     case 'export': exportState(); return;
+    case 'copy-backup': copyBackup(); return;
+    case 'paste-backup': {
+      const txt = await ask({ title: 'Paste backup', body: 'Paste the backup text you copied from Rush Tracker.', input: { value: '', multiline: true }, okText: 'Restore' });
+      if (txt) applyBackup(txt);
+      return;
+    }
     case 'reset':
-      if (!confirm('Erase all progress and timers?')) return;
+      if (!await ask({ title: 'Erase all progress?', body: 'This clears every done mark, skipped item and builder timer.', okText: 'Erase', danger: true })) return;
       state = defaultState();
       break;
     case 'close-settings': ui.tab = 'next'; break;
@@ -612,7 +704,7 @@ function onClick(e) {
 }
 
 async function init() {
-  document.documentElement.dataset.theme = state.theme;
+  applyTheme();
   try {
     const res = await fetch('data/upgrades.json');
     DATA = await res.json();
